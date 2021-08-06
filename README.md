@@ -7,7 +7,7 @@ Horário:<br>
 Monitores: <br>
   Luan Silva de Sena Advincula <lssa@cin.ufpe.br><br>
   Flavio Braga e Silva Junior <fbsj@cin.ufpe.br><br>
-  Lucas Asafe <lavn@cin.ufpe.br>
+  Lucas Asafe <lavn@cin.ufpe.br> <br>
    Yuri Valença <yvc@cin.ufpe.br>
   
 Classroom: <span style="font-family:Papyrus; font-size:4em; font-color:yellow">l4wnrtf</font>
