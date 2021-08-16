@@ -9,6 +9,10 @@ Monitores: <br>
   Flavio Braga e Silva Junior <fbsj@cin.ufpe.br><br>
   Lucas Asafe <lavn@cin.ufpe.br> <br>
    Yuri Valença <yvc@cin.ufpe.br>
+   
+Avaliação: <br>
+  70% projeto, 20% quiz, 10% participação<br>
+  1 ponto extra para roteiros <br>
   
 Classroom: <span style="font-family:Papyrus; font-size:4em; font-color:yellow">l4wnrtf</font>
 
