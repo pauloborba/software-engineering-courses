@@ -1,0 +1,10 @@
+{
+  "name": "MyStaticServer",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^3.21.2"
+  },
+  "scripts": {
+    "start": "node my_static_file_server.js"
+  }    
+}
