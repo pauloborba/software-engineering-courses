@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ProjectManagement</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1
+id="roteiro-de-exercícios-sobre-gerência-de-projetos-disciplina-engenharia-de-software-e-sistemas">Roteiro
+de exercícios sobre Gerência de projetos, disciplina Engenharia de
+Software e Sistemas</h1>
+<h2 id="paulo-borba">Paulo Borba</h2>
+<h2 id="centro-de-informática">Centro de Informática</h2>
+<h2 id="universidade-federal-de-pernambuco">Universidade Federal de
+Pernambuco</h2>
+<p>Adicione as respostas imediatamente após as perguntas, usando uma
+outra cor. Leia com calma as instruções, e reflita com cautela sobre as
+consequências de cada uma das atividades a seguir.</p>
+<h2 id="aula-1">Aula 1</h2>
+<ol type="1">
+<li><p>Assumindo que você já criou um <em>fork</em> do projeto exemplo
+no roteiro de gerência de configuração, acesse o seu <em>fork</em> do
+projeto exemplo (não o <a
+href="https://github.com/pauloborba/teachingassistant"><u>original</u></a>).
+Para autorizar a criação de issues no seu <em>fork</em>, selecione a
+opção <em>settings</em> do seu <em>fork</em>, procure por
+<em>Issues</em> e clique no <em>checkbox</em> correspondente. Selecione
+a aba <em>Projects</em>, logo abaixo do nome do seu <em>fork</em> no
+GitHub, leia as instruções em <em>Learn More</em>, crie um projeto com o
+template <em>Automated kanban with reviews</em>, e cole a seguir uma
+imagem com o que é mostrado pelo seu <em>browser</em>.</p></li>
+<li><p>Na aba <em>Issues</em>, você pode cadastrar novas tarefas a serem
+realizadas, e depois visualizá-las na aba <em>Projects</em> clicando em
+<em>Add cards</em> (no canto superior direito da aba <em>Projects</em>).
+O mesmo pode ser feito direto na aba <em>Projects</em>, primeiro
+adicionando uma nota (clicando em <strong>+</strong>) e depois
+convertendo-a para uma <em>issue</em>. Crie uma tarefa
+(<em>user-story</em>) "Desenvolver cenários de cadastro de
+auto-avaliação" e a coloque no <em>Backlog</em> (paínel <em>To do</em>).
+Observe os detalhes da tarefa, como tipo (<em>labels</em>), descrição,
+<em>milestone</em>, etc. Em ferramentas mais avançadas de gerenciamento,
+haveria informação também sobre a pontuação (<em>estimate</em>) da
+tarefa, a <em>epic</em> associada, e ajuda no cálculo dos limites de
+pontos a serem alocados em uma iteração. Qual a diferença entre o
+criador da tarefa e os responsáveis (<em>assignees</em>) pela mesma?
+Qual a utilidade do <em>Milestone</em>? Por que você acha que o
+desenvolvedor preferiu não criar uma tarefa em separado para cada
+possível cenário associado ao cadastro de auto-avaliação?</p></li>
+<li><p>Observe os paíneis <em>To do</em> e <em>In progress</em>? Qual a
+diferença entre eles? Para que a ferramenta dá suporte aos dois tipos de
+paíneis? Em outras ferramentas, tem-se um outro paínel, tipicamente
+chamado de <em>icebox</em>, que é onde inicialmente colocamos tarefas
+desejáveis mas que ainda não foram priorizadas. Assim, as não
+priorizadas ficam no <em>icebox</em>, e as priorizadas ficam no <em>To
+do</em>, enquanto não são alocadas para execução em uma dada iteração.
+Quais as vantagens e desvantagens desse terceiro paínel?</p></li>
+<li><p>Crie no <em>To do</em> as tarefas "Desenvolver cenários de
+carregamento de notas a partir de planilhas Excel" e "Desenvolver
+cenários de carregamento de alunos matriculados a partir de planilhas
+Excel". Na disciplina, focaremos em tarefas com essa granularidade.
+Basta preencher os campos principais, como tipo e descrição. Se
+eventualmente essas tarefas forem priorizadas para entrar no <em>In
+progress</em>, aí você poderá investir mais tempo nelas e preencher as
+demais informações. Cole a seguir uma imagem com o que é mostrado pelo
+seu <em>browser</em> após a criação das tarefas.</p></li>
+<li><p>Uma <em>epic</em> pode ser usada para representar uma
+<em>feature</em>, e assim agrupar e visualizar o progresso das tarefas
+associadas a ela. Em ferramentas que permitem criar <em>epics</em>, qual
+seria a vantagem de associar as duas tarefas que você criou na questão
+anterior à <em>epic</em> "Importação de Excel"? No GitHub, pode-se
+simular grosseiramente o conceito de epic através dos <em>Labels</em> de
+uma tarefa.</p></li>
+<li><p>Preencha as demais informações, como <em>assignee</em>, de uma
+das tarefas que você criou, e a mova para o paínel <em>In progress</em>.
+Cole a seguir uma imagem com o que é mostrado pelo seu <em>browser</em>
+após essa ação.</p></li>
+<li><p>Finalize e conclua a tarefa que foi movida para o paínel <em>In
+progress</em>. Note que, em uma situação real, a conclusão da tarefa não
+será definida por você, desenvolvedor ou gerente (assumindo que ele não
+tem o papel de <em>product owner</em>). Por quem você acha que
+será?</p></li>
+</ol>
+<h2 id="aula-2">Aula 2</h2>
+<ol start="8" type="1">
+<li><p>Considere que a tarefa "Desenvolver funcionalidade de exportação
+de relatórios de turmas" envolve a escrita do relatório em um
+determinado arquivo, e a tarefa "Desenvolver funcionalidade de análises
+de relatórios de turmas" envolve a leitura desse arquivo. Considerando
+que essas tarefas vão ser desenvolvidas em paralelo por dois
+desenvolvedores diferentes, que interface você definiria entre essas
+tarefas?</p></li>
+<li><p>Considerando que a funcionalidade associada à tarefa "Desenvolver
+funcionalidade de análises de relatórios de turmas" vai ser
+disponibilizada como um serviço a ser utilizado por outros sistemas que
+estão sendo desenvolvidos em paralelo ao assistente de ensino, que
+interface você definiria entre os sistemas?</p></li>
+<li><p>Assumindo que uma equipe de desenvolvimento de software realizou
+30, 34, 36 e 35 pontos em quatro iterações consecutivas, indique qual a
+<em>velocity</em> da equipe, assumindo que a equipe contou com mais um
+desenvolvedor a partir da segunda iteração.</p></li>
+<li><p>Assumindo que a velocidade atual da sua equipe de desenvolvimento
+é de 30 pontos, qual passará a ser a velocidade da mesma com a chegada
+de um novo desenvolvedor?</p></li>
+<li><p>Considere que as seguintes tarefas estão no <em>backlog</em> do
+seu projeto: <strong>T1</strong> desenvolver cenários de cadastro de
+alunos (1 ponto, baixa prioridade), <strong>T2</strong> desenvolver
+cenários de cadastro de notas de alunos (1 ponto, baixa prioridade),
+<strong>T3</strong> desenvolver cenários de importação de arquivo Excel
+com notas de alunos (3 pontos, alta prioridade), <strong>T4</strong>
+desenvolver cenários de importação de arquivo Excel com dados dos alunos
+(3 pontos, baixa prioridade), <strong>T5</strong> desenvolver cenários
+de cálculo de média de alunos (2 pontos, alta prioridade),
+<strong>T6</strong> desenvolver cenários de notificação de notas e média
+de alunos (3 pontos, média prioridade), <strong>T7</strong> desenvolver
+cenários de auto-avaliação (3 pontos, média prioridade),
+<strong>T8</strong> refatorar a <em>feature</em> de controle de acesso
+(1 ponto, baixa prioridade).</p>
+<ol type="a">
+<li><p>Supondo que a velocidade atual da equipe é de 7 pontos, que
+tarefas você escolheria para realizar na próxima iteração (<em>n</em>)?
+Por que?</p></li>
+<li><p>Considerando a mesma suposição, que tarefas você escolheria para
+realizar na iteração seguinte (<em>n+1</em>)? Por que?</p></li>
+<li><p>Supondo que o especialista na API de leitura de arquivos Excel
+não tivesse disponibilidade para trabalhar na iteração <em>n</em>, mas
+apenas na <em>n+1</em>, que tarefas você escolheria para realizar na
+iteração <em>n</em>? Por que? E que tarefas você escolheria para
+realizar na iteração <em>n+1</em>? Por que?</p></li>
+<li><p>Supondo que as tarefas <strong>T1</strong> e <strong>T2</strong>
+têm que ser realizadas ao mesmo tempo por dois desenvolvedores, qual a
+interface que o arquiteto deveria definir para que a implementação das
+funcionalidades pudesse ser feita de forma independente, sem excesso de
+comunicação entre os desenvolvedores?</p></li>
+<li><p>Supondo que você acabou de realizar a tarefa <strong>T1</strong>,
+que a tarefa <strong>T2</strong> está sendo desenvolvida por um outro
+desenvolvedor, e que as tarefas <strong>T3</strong> e
+<strong>T7</strong> estão programadas para a iteração atual, qual das
+duas você escolheria como a sua próxima tarefa a ser realizada? Por
+que?</p></li>
+<li><p>Supondo que não houvesse na equipe de desenvolvimento
+especialistas na API de notificação a ser utilizada pela tarefa
+<strong>T6</strong>, e que o uso da mesma pudesse afetar
+significativamente a definição da arquitetura do sistema, você deveria
+antecipar ou postergar a realização dessa tarefa?</p></li>
+<li><p>Que pontuação e prioridade você daria para uma tarefa de
+desenvolvimento da <em>feature</em> de cadastro de professores? Por que?
+E uma tarefa de desenvolvimento da <em>feature</em> de cálculo da média
+de alunos reprovados em um conjunto de turmas? Por que?</p></li>
+</ol></li>
+</ol>
+<h2 id="aula-3">Aula 3</h2>
+<ol start="13" type="1">
+<li><p>Cadastrar as atividades do projeto como <em>issues</em> do
+GitHub, e gerenciar o projeto</p>
+<ol type="a">
+<li><p>No caso de projeto que não foi criado pelo professor</p>
+<ol type="i">
+<li><p>criar, no GitHub, para a equipe, o repositório do projeto
+(inicialmente só com um arquivo README) e enviar o <em>link</em> para o
+canal do projeto no Slack</p></li>
+<li><p>cada membro da equipe cria o seu <em>fork</em>, caso a equipe
+tenha decido por essa organização</p></li>
+<li><p>verificar se o professor deu <em>fork</em> no seu
+projeto</p></li>
+<li><p>nas entregas futuras do projeto da disciplina, enviar PR para o
+<em>fork</em> que será criado pelo professor, não para o seu
+repositório</p></li>
+</ol></li>
+<li><p>No caso de projeto que foi criado pelo professor</p>
+<ol type="i">
+<li><p>criar, no GitHub, para a equipe, um <em>fork</em> do repositório
+do projeto</p></li>
+<li><p>nas entregas futuras do projeto da disciplina, enviar PR para o
+repositório original do professor</p></li>
+</ol></li>
+<li><p>Cada aluno cadastra as suas tarefas <strong>no repositório GitHub
+da equipe</strong> (todos têm que ter permissão de escrita)</p>
+<ol type="i">
+<li><p>uma para cada cenário, para juntamente detalhar e especificar o
+cenário, implementar os testes associados, e implementar a
+funcionalidade associada na aplicação</p></li>
+<li><p>pelo menos uma tarefa de refatoração</p></li>
+<li><p>coloque a seguir os <em>links</em> para as tarefas
+criadas</p></li>
+</ol></li>
+<li><p>A equipe, em conjunto, prioriza as tarefas e define duas
+iterações curtas (as tarefas da primeira iteração ficam em <em>In
+Progress</em>, as da segunda ficam em <em>To do</em>)</p>
+<ol type="i">
+<li><p>cada iteração com pelo menos duas tarefas por aluno</p></li>
+<li><p>o objetivo de cada iteração é gerar uma versão funcional do
+produto, que possa prontamente ser usada pelo cliente, mesmo que não
+tenha tantas funcionalidades; o importante é que as funcionalidades
+presentes estejam funcionando bem</p></li>
+<li><p>coloque a seguir uma imagem dos paíneis GitHub do seu projeto,
+ressaltando as suas tarefas</p></li>
+</ol></li>
+<li><p>A equipe, em conjunto, realiza as reuniões de acompanhamento
+(<em>daily scrum meeting</em>)</p>
+<ol type="i">
+<li><p>no <em>slack</em>, ou</p></li>
+<li><p>presencialmente (e cada um envia o seu resumo para o
+<em>slack</em>)</p></li>
+<li><p>pelo menos nos dias de aula de acompanhamento, mas idealmente
+todo dia em que trabalhar no projeto</p></li>
+</ol></li>
+</ol></li>
+</ol>
+</body>
+</html>
