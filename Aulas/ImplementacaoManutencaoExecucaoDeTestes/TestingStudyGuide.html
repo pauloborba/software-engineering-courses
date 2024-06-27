@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Testing</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1
+id="roteiro-de-exercícios-sobre-testes-disciplina-engenharia-de-software-e-sistemas">Roteiro
+de exercícios sobre Testes, disciplina Engenharia de Software e
+Sistemas</h1>
+<h2 id="paulo-borba">Paulo Borba</h2>
+<h2 id="centro-de-informática">Centro de Informática</h2>
+<h2 id="universidade-federal-de-pernambuco">Universidade Federal de
+Pernambuco</h2>
+<p>Adicione as respostas imediatamente após as perguntas, usando uma
+outra cor. Leia com calma e atenção as instruções, e reflita com cautela
+sobre as consequências de cada comando. <strong>As instruções abaixo
+assumem que toda a parte de instalação do roteiro de SaaS foi
+concluída</strong>. Em particular, <mark>se você estiver usando o
+Windows, tem que ajustar (no arquivo <strong>package.json</strong>) o
+caminho do <strong>tsc</strong>; ele tenta chamar
+<strong>./node_modules/.</strong>, mas, no Windows, tem que descobrir o
+endereço onde o <strong>tsc</strong> está instalado e ajustar no
+<strong>package.json</strong> (invertendo as barras do PATH, já que essa
+é uma diferença importante do unix para o Windows).</mark> É também
+assumido que todas as referências (manuais, tutoriais, etc.) mencionadas
+nos roteiros anteriores já foram consultadas, e que os alunos devem
+estar prontos para rapidamente consultá-las novamente durante o resto do
+curso, inclusive quando seguindo o roteiro abaixo. Os <em>commits</em>
+mencionados abaixo não são referentes ao que está no <em>master</em> do
+repositório do projeto; eles são referentes ao que está no
+<strong><em>branch</em> criado pelo professor e associado à essa edição
+da disciplina (por exemplo, 2019-2, 2020-1, etc.)</strong></p>
+<h2 id="aula-1">Aula 1</h2>
+<ol type="1">
+<li><p>No projeto <a
+href="https://github.com/pauloborba/teachingassistant/commits/master"><strong><u>teachingassistant</u></strong></a>,
+analise o <em>commit</em> "criacao da feature e testes de alunos".
+Comece pelo arquivo <strong>alunos.feature</strong>, que contém apenas a
+descrição de um cenário, mas poderia ter vários. Coloque em execução a
+versão do sistema obtida ao final do roteiro anterior. Manualmente,
+execute via a GUI do sistema os passos desse cenário. Cole abaixo uma
+imagem do sistema em execução após a execução desses passos.</p></li>
+<li><p>Para evitar essa execução manual, precisamos indicar que código
+deve ser executado para cada passo do cenário que queremos automatizar.
+Analisando o arquivo <strong>alunos.ts</strong>, como você acha que é
+feita a associação dos passos do arquivo de <em>feature</em> com o
+código desse arquivo de implementação dos passos? Consulte a
+documentação do <a
+href="https://github.com/cucumber/cucumber-js"><u>Cucumber.js</u></a>
+(software que faz a ligação entre os cenários e o código), especialmente
+a seção <em>Step Definitions</em>. Consulte a referência de <a
+href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp"><u>Javascript</u></a>
+para expressões regulares. Qual o significado do <strong>\d</strong> e
+do <strong>[^\"]</strong> nas expressões regulares desse arquivo? Os
+<strong>*</strong> usados nas expressões regulares desse arquivo são
+realmente necessárias? Como são instanciados os parâmetros da função que
+é passada como segundo parâmetro do <strong>When</strong>? O que
+determina a quantidade de parâmetros dessa função?</p></li>
+<li><p>Para facilitar a implementação dos passos, usamos <a
+href="http://www.protractortest.org/#/api"><u>Protractor</u></a>.
+Consulte a documentação da sua <strong>API</strong> (application
+programming interface), especialmente as funções associadas à variável
+<strong>browser</strong> exportada pelo Protractor. Que declaração do
+arquivo <strong>alunos.ts</strong> nos dá acesso a essa variável? Qual o
+comportamento da função <strong>getTitle</strong>? Na parte da API
+relacionadas a <strong>element</strong> (que representa elementos de
+páginas HTML), temos explicações sobre funções como <strong>$</strong> e
+<strong>click</strong>. Qual o comportamento da expressão
+<strong>$("a[name='alunos']").click()</strong>?</p></li>
+<li><p>Para facilitar a verificação de restrições a serem satisfeitas
+pelos testes, usamos a API <a
+href="http://chaijs.com/plugins/chai-as-promised/"><u>chai</u></a>. Qual
+o significado da expressão abaixo</p></li>
+</ol>
+<blockquote>
+<p><strong>expect(browser.getTitle()).to.eventually.equal('TaGui')</strong>?</p>
+<p>Você acha que ela é realmente necessária? O teste seria de melhor
+qualidade sem essa linha na implementação do passo?</p>
+</blockquote>
+<ol start="5" type="1">
+<li><p>Atualize o seu repositório com o conteúdo dos <em>commits</em>
+até "criacao da feature e testes de alunos" (execute vários
+<em>cherry-picks</em>, um para cada <em>commit</em> até o
+<em>commit</em> mencionado na questão, para facilitar a resolução de
+possíveis conflitos). Instale as dependências necessárias
+digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>npm install</strong></p>
+</blockquote>
+<p>no diretório <strong>tests-acceptance</strong>. Atualize o
+<em>driver</em> do <em>browser</em> digitando</p>
+<blockquote>
+<p><strong>npm run webdriver-update</strong></p>
+<p>Em um terminal, execute o <em>driver</em> digitando (é assumido que
+há uma versão de Java instalada na sua máquina)</p>
+<p><strong>npm run webdriver-start</strong></p>
+<p>Que arquivo do <em>commit</em> "criacao e configuracao do projeto de
+testes de aceitacao" define esses comandos associados ao
+<strong>webdriver</strong>? Em dois outros terminais ou abas do mesmo
+terminal, execute o servidor e o cliente (como nos roteiros anteriores).
+Em outro terminal ou aba, no diretório
+<strong>tests-acceptance,</strong> compile e execute os testes
+digitando</p>
+<p><strong>npm test</strong></p>
+<p>Cole logo abaixo a imagem do relatório da execução. Que arquivo do
+<em>commit</em> "criacao e configuracao do projeto de testes de
+aceitacao" define esse comando <strong>test</strong>? Caso o Firefox da
+sua máquina esteja desatualizado, atualize-o ou instale uma nova versão.
+Caso haja mais de uma versão do Firefox instalada na máquina (por
+exemplo, nos laboratórios, após instalar uma versão nova com o cinstala,
+que coloca o executável em ~/.local/bin) altere o arquivo
+<strong>tests-acceptance/config/config.ts</strong> para que ele contenha
+o seguinte:</p>
+<p><strong>capabilities: {</strong></p>
+<p><strong>browserName: 'firefox'</strong></p>
+<p><strong>}</strong></p>
+<p>Para o uso do chrome, você teria que colocar algo como a seguir, mas
+não recomendamos.</p>
+<p><strong>capabilities: {</strong></p>
+<p><strong>browserName: chrome,</strong></p>
+<p><strong>version: ''versao_do_novo_chrome_instalado",</strong></p>
+<p><strong>chromeOptions: {binary:
+'pathdonovochromeinstalado'}</strong></p>
+<p><strong>}</strong></p>
+</blockquote>
+<ol start="6" type="1">
+<li><p>Qual o propósito das alterações trazidas nos arquivos HTML pelo
+<em>commit</em> "adicao de nomes nos elementos HTML a serem
+referenciados pelos testes"? É correto fazer essas mudanças? Elas mudam
+o comportamento do sistema e o que é renderizado pelo <em>browser</em>?
+Sem essas mudanças o teste mencionado nas questões anteriores
+<strong>passaria</strong> (seja executado com sucesso)?</p></li>
+<li><p>Consultar as opções de configuração do <a
+href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities"><u>selenium</u></a>.
+Você acha que a implementação do segundo <strong>Given</strong> está
+correta? Por que? Que nova parte da API do Protractor você teve que ler
+para entender o funcionamento do código desse passo? Por que você acha
+que foi necessário usar <strong>Promise.resolve</strong> no último
+comando da implementação desse passo?</p></li>
+<li><p>Para evitar a dependência com o texto do botão, que expressão
+você usaria, ao invés de
+<strong>element(by.buttonText('Adicionar'))</strong>, no último comando
+da implementação do <strong>When</strong>? Por que você acha que seria
+interessante evitar essa dependência?</p></li>
+</ol>
+<h2 id="aula-2">Aula 2</h2>
+<ol start="9" type="1">
+<li><p>Analise o <em>commit</em> "criacao e configuracao do projeto de
+testes de aceitacao". Que declarações nos arquivos de configuração
+indicam a localização dos arquivos de <em>features</em> e <em>steps</em>
+de testes? Por que você acha que o projeto de testes foi colocado em um
+diretório diferente dos existentes no projeto?</p></li>
+<li><p>Analise o <em>commit</em> "criacao da feature e testes de
+alunos". Cada comando utilizado para implementar um passo de um cenário
+tem um dos seguintes propósitos: (a) simular ações no <em>browser</em>,
+(b) consultar e processar o conteúdo do que é mostrado no browser, e (c)
+verificar se esse conteúdo satisfaz determinadas restrições. No código
+do primeiro <strong>Given</strong>, temos comandos com quais dos
+propósitos acima? Você acha isso correto? Por que? E no
+<strong>When</strong>, temos comandos com quais dos propósitos acima? E
+no <strong>Then</strong>, temos comandos com quais dos propósitos acima?
+Seria correto termos, em um <strong>Then</strong>, comandos que simulam
+ações no <em>browser</em>? Por que?</p></li>
+<li><p>Uma forma alternativa de implementar o <strong>Then</strong> do
+último passo seria com um código similar ao do segundo passo, apenas
+trocando 0 por 1. Qual das alternativas (a que acabamos de propor e a
+que temos no código) você acha que impõe mais restrições no
+comportamento do sistema? Qual você acha que seria mais adequada? Por
+que?</p></li>
+<li><p>Analise o <em>commit</em> "novo cenario de cadastro de aluno com
+CPF existente". Você considera os dois cenários
+<strong>independentes</strong>, no sentido que a execução de um não tem
+nenhum efeito na execução do outro? Caso o CPF utilizado no segundo
+cenário fosse "683", você consideraria os dois cenários independentes?
+Por que? Por que a independência é importante entre os cenários e passos
+de teste?</p></li>
+<li><p>Analise o <em>commit</em> "implementacao do cenario de cadastro
+de aluno com CPF duplicado". Qual o propósito da modificação do arquivo
+HTML? Caso um desenvolvedor fosse responsável por criar o arquivo HTML,
+e outro fosse responsável por implementar o teste, qual seria a
+interface entre as duas tarefas? Por que, no <strong>Given</strong>
+adicionado, são invocados tanto comandos de criação de um aluno quanto
+de verificação se há um determinado aluno cadastrado?</p></li>
+<li><p>Qual a principal melhoria no código de teste feita no
+<em>commit</em> "extracao de criarAluno nos testes de aceitacao"? Qual a
+principal melhoria no código de teste feita no <em>commit</em>
+"refatoracao dos testes de aceitacao"?</p></li>
+<li><p>Implemente um teste de aceitação de GUI para a funcionalidade de
+remoção de alunos do roteiro anterior.</p>
+<ol type="a">
+<li><p>Cole o teste logo abaixo.</p></li>
+<li><p>Verifique se o seu teste está seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+<li><p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p></li>
+</ol></li>
+<li><p><strong>(Opcional)</strong> Implemente um teste de aceitação de
+serviço para a funcionalidade de remoção de alunos do roteiro
+anterior.</p>
+<ol type="a">
+<li><p>Cole o teste logo abaixo.</p></li>
+<li><p>Verifique se o seu teste está seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+<li><p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p></li>
+</ol></li>
+<li><p><strong>(Opcional)</strong> Implemente os testes correspondentes
+aos cenários de GUI para o cadastro de auto-avaliação especificados por
+você no roteiro de requisitos.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Verifique se os seus testes estão seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+<li><p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p></li>
+</ol></li>
+<li><p><strong>(Opcional)</strong> Implemente os testes correspondentes
+aos cenários de GUI para a visualização de discrepâncias de
+auto-avaliação especificados por você no roteiro de requisitos.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Verifique se os seus testes estão seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+<li><p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p></li>
+</ol></li>
+</ol>
+<h2 id="aula-3">Aula 3</h2>
+<ol start="19" type="1">
+<li><p>Consulte a documentação do Jasmine (<a
+href="https://github.com/matthewjh/jasmine-promises"><u>com
+promises</u></a>) e do <a
+href="https://github.com/request/request-promise#cheat-sheet"><u>request-promise</u></a>
+e analise o código do <em>commit</em> "testes de servidor". Qual o
+comportamento de <strong>beforeAll</strong> e
+<strong>beforeEach</strong> no arquivo de teste? Que método HTTP é
+invocado no teste "só cadastra alunos"? Como isso é especificado (já que
+não é chamado nenhum método no objeto <strong>request</strong>)? No
+teste "não cadastra alunos com CPF duplicado", qual seria o
+comportamento caso as requisições não tivessem sido encadeadas com o
+<strong>then</strong>?</p></li>
+<li><p>Atualize o seu repositório com o conteúdo dos <em>commits</em>
+relativos a testes de serviço (até o <em>commit</em> "testes de
+servidor"; note que a ordem dos commits não corresponde exatamente a
+ordem das questões, esse, por exemplo, aparece depois de commits que só
+vão ser usados na próxima aula). Instale as dependências necessárias
+digitando <strong>npm install</strong> no diretório
+<strong>ta-server</strong>. No mesmo diretório, compile e execute os
+testes digitando <strong>npm test.</strong> Cole logo abaixo a imagem do
+relatório da execução.</p></li>
+<li><p>Qual o efeito de <strong>expect(err).toEqual(null)</strong> nos
+blocos <em>catch</em> dos testes do arquivo <a
+href="https://github.com/pauloborba/teachingassistant/commits/2019-2#diff-594cceae3b8a3b25e4dc455337c8627b">ta-server.spec.ts</a>?</p></li>
+<li><p>Com a versão atual do servidor, o teste "só cadastra alunos"
+passará ou falhará? Por que?</p></li>
+<li><p>Implemente dois testes de serviço relacionados aos cenários de
+remoção de alunos.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Verifique se os seus testes estão seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+<li><p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p></li>
+</ol></li>
+<li><p><strong>(Opcional)</strong> Implemente dois testes de serviço
+relacionados aos cenários do cadastro de auto-avaliação.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Verifique se os seus testes estão seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p>Execute os testes e cole logo abaixo a imagem do relatório da
+execução.</p>
+</blockquote>
+<h2 id="aula-4">Aula 4</h2>
+<ol start="25" type="1">
+<li><p>Analise o <em>commit</em> "ajustes na configuracao para testes de
+unidade" e explique logo a seguir como são especificadas as
+características (nomes, diretórios, etc.) dos arquivos de teste a serem
+executados.</p></li>
+<li><p>Analise o <em>commit</em> "testes de unidade" (deveria ser testes
+de classe!) e tente entender os testes de unidade criados. Consulte a
+documentação do Jasmine (<a
+href="https://jasmine.github.io"><u>básico</u></a>). Qual o efeito do
+<strong>beforeEach</strong> e porque ele é necessário nesse caso? O que
+aconteceria caso <strong>cadastro</strong> tivesse sido inicializada na
+sua declaração, ao invés de no <strong>beforeEach</strong>? Os três
+casos de teste apresentados são dependentes? Por que?</p></li>
+<li><p>Atualize o seu repositório com o conteúdo dos <em>commits</em>
+relativos a testes de classe (até o <em>commit</em> "testes de
+unidade"). Instale as dependências necessárias digitando <strong>npm
+install</strong> no diretório <strong>ta-server</strong>. No mesmo
+diretório, compile e execute os testes digitando <strong>npm
+test.</strong> Cole logo abaixo a imagem do relatório da
+execução.</p></li>
+<li><p>Que mais testes de unidade deveríamos ter para obtermos uma maior
+<strong>cobertura</strong> da classe de cadastro de alunos? Implemente
+um desses testes, execute-o e cole o resultado da execução logo
+abaixo.</p></li>
+<li><p>Qual a principal vantagem da modificação do <em>commit</em>
+"refatoracao dos testes, cadastro de alunos"?</p></li>
+<li><p>Qual a principal vantagem da refatoração do <em>commit</em>
+"refinamento do teste de CPF duplicado, e refatoracao"? A modificação
+feita no último caso de teste, altera o seu comportamento? O teste
+resultante é melhor ou pior do que o anterior?</p></li>
+<li><p>Implemente dois testes de classe indiretamente relacionados aos
+cenários de remoção de alunos.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Verifique se os seus testes estão seguindo rigorosamente as
+recomendações para escrita de testes com qualidade (mencionadas nos
+<em>slides</em> e no livro texto).</p></li>
+</ol></li>
+<li><p>Qual a principal diferença entre os testes "não aceita alunos com
+CPF duplicado" (no arquivo <a
+href="https://github.com/pauloborba/teachingassistant/commits/2019-2#diff-eeffe3b15e644bf1dfd4c5eb1b78e7fa">cadastrodealunos.spec.ts</a>
+do <em>commit</em> do teste de classe) e "não cadastra alunos com CPF
+duplicado" (no arquivo <a
+href="https://github.com/pauloborba/teachingassistant/commits/2019-2#diff-594cceae3b8a3b25e4dc455337c8627b">ta-server.spec.ts</a>
+do <em>commit</em> de teste de serviço)? Isso caracteriza bem a
+diferença entre testes de classes e testes de serviço? Por que? Por que
+você acha que o desenvolvedor optou por escrever os dois tipos de
+teste?</p></li>
+<li><p><strong>(Opcional)</strong> Solicite, a um colega de turma, três
+testes (um de aceitação, um de serviço, e um de classe) implementados
+por ele como resposta dos exercícios anteriores.</p>
+<ol type="a">
+<li><p>Cole os testes logo abaixo.</p></li>
+<li><p>Identifique, e liste logo abaixo, quais recomendações para
+escrita de testes com qualidade (mencionadas nos <em>slides</em> e no
+livro texto) não foram seguidas nos testes especificados pelo seu
+colega.</p></li>
+</ol></li>
+<li><p>Implementar parte dos testes do seu projeto: aceitação (um para
+cada cenário), de classe (pelo menos um, mas busque a quantidade
+suficiente para testar os aspectos mais relevantes da funcionalidade
+associada), e de serviço (pelo menos um, mas busque a quantidade
+suficiente para testar os aspectos mais relevantes da funcionalidade
+associada)</p></li>
+</ol>
+</body>
+</html>

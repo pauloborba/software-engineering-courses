@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ConfigurationManagement</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1
+id="roteiro-de-exercícios-sobre-gerência-de-configuração-disciplina-engenharia-de-software-e-sistemas">Roteiro
+de exercícios sobre Gerência de configuração, disciplina Engenharia de
+Software e Sistemas</h1>
+<h2 id="paulo-borba">Paulo Borba</h2>
+<h2 id="centro-de-informática">Centro de Informática</h2>
+<h2 id="universidade-federal-de-pernambuco">Universidade Federal de
+Pernambuco</h2>
+<p>Adicione as respostas imediatamente após as perguntas, usando uma
+outra cor. Leia com calma as instruções, e reflita com cautela sobre as
+consequências de cada comando.</p>
+<h2 id="aula-1">Aula 1</h2>
+<ol type="1">
+<li><p>O sistema de gerenciamento de metas (SGM) está armazenado no
+GitHub. Segundo as recomendações dos responsáveis pelo projeto, para
+colaborar com o projeto precisamos primeiro criar um <em>fork</em> do
+mesmo, isto é, uma cópia pública do projeto, armazenada no próprio
+GitHub.</p>
+<ol type="a">
+<li><p>Se você não tem, crie uma conta no GitHub (<a
+href="https://github.com/pauloborba/teachingassistant"><u>https://github.com</u></a>)</p></li>
+<li><p>Vá no site do projeto (<a
+href="https://github.com/pauloborba/teachingassistant"><u>https://github.com/pauloborba/teachingassistant</u></a>)
+e solicite a criação de um <em>fork</em> (ver opção no canto direito
+superior da página que está no endereço acima)</p></li>
+<li><p>Confirme a criação e endereço do <em>fork</em>, a cópia criada do
+repositório. Cole abaixo o endereço.</p></li>
+<li><p>Compare o conteúdo do <em>fork</em> com o conteúdo do projeto
+original. Eles têm o mesmo conteúdo?</p></li>
+<li><p>Os responsáveis pelo projeto não permitem que você envie
+contribuições diretamente para o repositório principal; você terá
+primeiro que enviar contribuições para o <em>fork</em> e depois
+solicitar que as mesmas sejam analisadas e integradas ao repositório
+principal. Outros projetos podem ter formas diferentes de colaboração;
+com o SGM, temos que seguir esse procedimento.</p></li>
+</ol></li>
+<li><p>Para começar a efetivamente contribuir com o SGM, precisamos
+copiar o conteúdo do <em>fork</em>, que está nos servidores do GitHub,
+para a máquina na qual vamos trabalhar. Para isso, precisamos criar um
+<em>clone</em> do <em>fork</em>.</p>
+<ol type="a">
+<li><p>Na linha de comandos da sua máquina (se você não é familiar com
+<em>shells</em>, recomendo fortemente que estude agora; este <a
+href="https://github.com/chrisparnin/EngineeringBasics/blob/master/Shells.md#shells"><u>tutorial</u></a>
+traz um bom resumo), no diretório onde você deseja que o projeto seja
+armazenado, digite</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git clone &lt;URL_DO_SEU_FORK&gt;</strong></p>
+</blockquote>
+<ol start="2" type="a">
+<li><p>Observe uma mensagem como a abaixo <img src="media/image1.png"
+style="width:6.5in;height:1.09722in" /></p></li>
+<li><p>Liste e inspecione o conteúdo do diretório, comparando com o
+conteúdo do projeto original. Temos agora o mesmo conteúdo tanto no
+repositório principal quanto no <em>fork</em> do GitHub e no
+<em>clone</em> da sua máquina?</p></li>
+<li><p>Analise a documentação do git (<a
+href="https://github.com/progit/progit2/releases/download/2.1.161/progit.pdf"><u>livro</u></a>,
+<a href="https://git-scm.com/docs"><u>manual de referência</u></a>) e
+descubra o propósito do comando <strong>git init</strong>. Qual a
+diferença dele em relação ao <strong>git clone</strong>? Em que
+situações você usaria o <strong>git init?</strong></p></li>
+</ol>
+<ol start="3" type="1">
+<li><p>Agora podemos efetivamente contribuir com o projeto, começando
+pelos requisitos.</p>
+<ol type="a">
+<li><p>Dentro do diretório <strong>teachingassistant</strong>, crie o
+diretório <strong>features</strong></p></li>
+<li><p>Nesse diretório criado, crie o arquivo
+<strong>AutoAvaliacao.feature</strong> e digite nele a feature que você
+especificou no roteiro de requisitos</p></li>
+<li><p>Para que o git passe a gerenciar o histórico de mudanças nos
+arquivos desse novo diretório, digite</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git add features</strong></p>
+</blockquote>
+<ol start="4" type="a">
+<li><p>Para registrar essa mudança, criaremos a primeira versão desse
+arquivo digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git commit -m "criação da feature de auto
+avaliação"</strong></p>
+<p>Isso cria, e armazena no histórico do projeto, um <em>commit</em>, ou
+seja um conjunto de versões dos arquivos modificados (nesse caso, só o
+arquivo .feature criado mais acima). Caso mais adiante seja feita uma
+mudança indesejada a um arquivo, teremos disponível a versão desse
+commit como referência. Qual a mensagem retornada pela execução desse
+comando? Qual a diferença entre os comandos <strong>add</strong> e
+<strong>commit</strong>?</p>
+</blockquote>
+<ol start="5" type="a">
+<li><p>Note que o argumento usado acima serve para registrar a mensagem
+do commit, que deve retratar claramente, de forma precisa e resumida, a
+mudança feita.</p>
+<ol type="i">
+<li><p>Observe no seu <em>fork</em> as outras mensagens de
+<em>commit</em>, que podem servir de exemplo para as suas mensagens.
+Cole abaixo uma mensagem nesse <em>fork</em> que você considera
+adequada, e outra que considera inadequada.</p></li>
+<li><p>Veja também o histórico de <em>commits</em> na sua máquina
+digitando</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git log --graph --branches</strong></p>
+<p>Observe informações como o identificador do commit, autor e data de
+criação. Os autores dos <em>commits</em> são os mesmos? Por que? No
+manual do git, veja as opções de linha de comando e explique qual o
+comportamento do comando <strong>log</strong> caso as opções acima não
+tivessem sido usadas. Indique uma opção da lista que você ache que
+poderia ser útil para você.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><p>Digite agora, no arquivo <strong>AutoAvaliacao.feature</strong>,
+os cenários de preenchimento bem sucedido da auto-avaliação.</p>
+<ol type="a">
+<li><p>Verifique a situação do seu repositório local, em termos de
+arquivos modificados, diferença em relação ao seu <em>fork</em>
+(origin/master), etc. digitando o comando abaixo. Cole em seguida uma
+imagem com o resultado e explique-o.</p></li>
+</ol></li>
+</ol>
+<p><strong>git status</strong></p>
+<ol start="2" type="a">
+<li><p>Verifique quais as mudanças feitas em seu diretório de trabalho,
+em relação ao último commit, digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git diff</strong></p>
+<p>Como esse comando indica as adições de linhas? Modifique uma das
+linhas do arquivo <strong>AutoAvaliacao.feature</strong>. Execute
+novamente o comando <strong>diff</strong>. Como a mudança é indicada
+pelo mesmo?</p>
+</blockquote>
+<ol start="3" type="a">
+<li><p>Analise a documentação do git e indique abaixo como o comando
+<strong>diff</strong> pode ser usado para comparar o conteúdo de dois
+<em>commits</em> anteriores ao atual.</p></li>
+<li><p>Registre a última mudança feita criando uma nova versão dos
+arquivos modificados:</p></li>
+</ol>
+<blockquote>
+<p><strong>git commit -a -m "criação dos cenários de preenchimento bem
+sucedido da auto-avaliação"</strong></p>
+<p>Veja na documentação do git que o "-a" adiciona todos os arquivos
+modificados e previamente adicionados (via comando
+<strong>add</strong>), não precisando chamar o comando
+<strong>add</strong> repetidamente.</p>
+</blockquote>
+<ol start="5" type="a">
+<li><p>Modifique uma das linhas do arquivo
+<strong>AutoAvaliacao.feature</strong> e dê <em>commit,</em> com nova
+mensagem e agora sem o "-a". A sua modificação foi armazenada pelo
+<em>commit</em>? Por que?</p></li>
+</ol>
+<ol start="5" type="1">
+<li><p>Repita passos similares ao do item anterior para registrar os
+cenários de preenchimento mal sucedido da auto-avaliação. É melhor ter
+<em>commits</em> separados para contribuições que têm propósitos
+diferentes. Assim podemos ter <em>commits</em> frequentes, cada
+<em>commit</em> com pequenas contribuições, com foco bem definido,
+claramente refletidas pela mensagem do <em>commit</em>.</p>
+<ol type="a">
+<li><p>Veja agora como está o histórico de <em>commits</em> na sua
+máquina. Cole abaixo a imagem.</p></li>
+<li><p>Analisando o histórico, reflita sobre quais as vantagens da
+abordagem (de pequenos e frequentes <em>commits</em>) discutida acima?
+Quais as desvantagens?</p></li>
+</ol></li>
+<li><p>Assumindo que essa parte da <em>feature</em> foi concluída, ou
+precisa ser revisada ou analisada por outras pessoas
+(<em>stakeholders</em>, outros membros da equipe, etc.), temos que
+enviar para o seu <em>fork</em> as modificações feitas até o
+momento.</p>
+<ol type="a">
+<li><p>Como você tem autorização de escrita no seu <em>fork</em>
+(origin), digite o comando a seguir. Consulte a documentação do git para
+indicar o significado de cada uma das partes do comando abaixo.</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git push origin master</strong></p>
+</blockquote>
+<ol start="2" type="a">
+<li><p>No site do seu <em>fork</em>, verifique agora o histórico de
+<em>commits</em>. Ele contém o mesmo histórico do repositório da sua
+máquina? O conteúdo dos arquivos é o mesmo no fork e no repositório
+local?</p></li>
+<li><p>Clique em dois commits quaisquer do histórico do seu
+<em>fork</em>. Considerando que a abordagem de <em>commits</em> pequenos
+e frequentes não tivesse sido seguida, qual a dificuldade que você
+imagina que teria para revisar um <em>commit</em> grande, sem um foco
+claro, e com uma mensagem pouco representativa?</p></li>
+</ol>
+<h2 id="aula-2">Aula 2</h2>
+<ol start="7" type="1">
+<li><p>Agora vamos trabalhar em uma parte experimental da
+<em>feature</em> de auto avaliação, a visualização de auto-avaliações
+discrepantes. Ainda não é certo que essa parte será integrada à próxima
+versão do produto que será entregue ao cliente. Assim é melhor começar a
+trabalhar nela em uma linha de desenvolvimento alternativa e
+independente, um <em>branch</em>, para evitar impacto na linha principal
+(<em>branch</em> <strong>master</strong>) de desenvolvimento.</p>
+<ol type="a">
+<li><p>Crie um <em>branch</em> chamado <strong>discrepantes</strong>
+digitando</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git branch discrepantes</strong></p>
+</blockquote>
+<ol start="2" type="a">
+<li><p>Visualize os <em>branches</em> existentes digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git branch</strong></p>
+</blockquote>
+<ol start="3" type="a">
+<li><p>Note o asterisco ao lado de <strong>master</strong>, o que indica
+que ele é o <em>branch</em> atual. Qualquer <em>commit</em> criado será
+adicionado a esse <em>branch</em>. Como queremos trabalhar no novo
+<em>branch</em>, temos que torná-lo o <em>branch</em> atual
+digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git checkout discrepantes</strong></p>
+</blockquote>
+<ol start="4" type="a">
+<li><p>Adicione ao arquivo <strong>AutoAvaliacao.feature</strong> um
+cenário de quando não há discrepância, e registre a mudança criando um
+<em>commit</em>.</p></li>
+<li><p>Enquanto você estava trabalhando no novo cenário, os
+<em>stakeholders</em> analisaram os cenários que você tinha publicado no
+seu <em>fork</em>, e notaram que o cenário de falha (assumindo que esse
+é o último cenário do arquivo) precisa de um passo adicional nos
+resultados esperados (<em>Then</em>).</p>
+<ol type="i">
+<li><p>Mude para o <em>branch</em> principal, adicione o passo
+solicitado <strong>no final do cenário</strong> (atenção às localizações
+exatas das mudanças explicitadas nesta questão, já que isso pode fazer
+diferença no resultado), registre a mudança, e a envie para o seu
+<em>fork</em>.</p></li>
+<li><p>O que teria acontecido se você estivesse trabalhando no novo
+cenário diretamente no <em>branch</em> <strong>master</strong> ao invés
+de em <strong>discrepantes?</strong> O arquivo atualizado e enviado para
+o usuário conteria algo que não deveria conter? O que? Por que?</p></li>
+<li><p>Visualize o histórico de mudanças. Mude para o <em>branch</em>
+<strong>discrepantes</strong> e visualize o histórico de mudanças. Há
+diferenças entre os dois históricos de mudanças? Quais? Por
+que?</p></li>
+</ol></li>
+<li><p>Adicione <strong>no final do arquivo</strong>
+<strong>AutoAvaliacao.feature</strong> um cenário de quando há
+discrepância, e registre a mudança criando um <em>commit</em>.</p></li>
+<li><p>Tendo finalizado com sucesso essa nova parte da <em>feature</em>
+de auto-avaliação, e os <em>stakeholders</em> tendo optado pela sua
+incorporação à próxima versão do produto, integre as modificações do
+<em>branch</em> <strong>discrepantes</strong> ao <em>branch</em>
+<strong>master</strong>. Digite</p></li>
+</ol>
+<blockquote>
+<p><strong>git checkout master</strong></p>
+<p><strong>git merge discrepantes</strong></p>
+</blockquote>
+<ol start="8" type="a">
+<li><p>Você deve ter recebido uma mensagem de falha da integração, algo
+como<img src="media/image2.png"
+style="width:6.5in;height:0.61111in" /></p></li>
+</ol>
+<blockquote>
+<p>O que você acha que aconteceu? Por que?</p>
+</blockquote>
+<ol start="9" type="a">
+<li><p>Abra o arquivo <strong>AutoAvaliacao.feature.</strong> O que há
+de diferente nele em relação a uma arquivo de <em>features</em> típico?
+Qual o conteúdo final que você esperaria para esse arquivo?</p></li>
+<li><p>Altere o arquivo para que ele contenha o conteúdo final que você
+esperaria, e registre a mudança criando um novo
+<em>commit</em>.</p></li>
+<li><p>Visualize agora o histórico de mudanças. Qual a diferença para o
+histórico anterior? Note que asteriscos representam <em>commits</em> de
+merge ou não. As barras representam o que?</p></li>
+<li><p>Envie as mudanças para o seu <em>fork</em>, e no site do
+<em>fork</em> analise o histórico de <em>commits</em> e
+<em>branches</em>.</p></li>
+</ol>
+<ol start="8" type="1">
+<li><p>Tendo chegada agora uma solicitação de mudança mais significativa
+no cenário de visualização em que há discrepância, é interessante criar
+um <em>branch</em> específico para corrigir este erro. Assim, crie o
+<em>branch</em> <strong>fixDiscrepancia</strong>, ajuste o cenário
+(adicionando duas linhas quaisquer), envie para revisão no seu
+<em>fork</em> (veja o comando do item d abaixo)<em>,</em> e assumindo
+que os <em>stakeholders</em> estão agora satisfeitos, integre a correção
+do erro ao <em>branch</em> principal.</p>
+<ol type="a">
+<li><p>A integração foi feita com sucesso, sem conflito? Por
+que?</p></li>
+<li><p>Envie as mudanças para o seu <em>fork</em></p></li>
+<li><p>Visualize as mudanças localmente e no GitHub. A história está
+registrada de acordo com o que você esperava?</p></li>
+<li><p>Para que o <em>branch</em> <strong>discrepantes</strong> também
+seja visualizado no seu <em>fork</em>, digite</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git push origin discrepantes</strong></p>
+<p>Analise agora o conteúdo do seu <em>fork</em> no GitHub. Qual a
+diferença em relação ao que você conseguia ver antes no GitHub? Há novos
+<em>commits</em>? Por que? Há novos <em>branches</em>?</p>
+</blockquote>
+<ol start="5" type="a">
+<li><p>Se você não tivesse criado um <em>branch</em> para corrigir o
+erro, e, após ter feito progresso e realizado alguns <em>commits</em>,
+não tivesse conseguido finalizar a correção do erro a tempo para o
+lançamento da nova versão do produto, o que aconteceria?</p></li>
+</ol>
+<ol start="9" type="1">
+<li><p>Para solicitar que as mudanças enviadas no seu <em>fork</em>
+sejam incorporadas ao repositório principal, siga as seguintes
+recomendações:</p>
+<ol type="a">
+<li><p>Verifique o <em>status</em> do seu repositório local</p></li>
+<li><p>Se houver mudanças no repositório principal, incorpore-as ao seu
+repositório local digitando</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git pull</strong></p>
+<p>Que comando você usaria para baixar mudanças do repositório de um
+colega, ao invés do repositório principal? Se você precisar baixar
+atualizações do seu colega com frequência, é interessante definir o
+repositório dele como um <em>remote</em>; que comando do git você usaria
+para fazer isso? Indique qual a diferença entre o comando
+<strong>pull</strong> e o <strong>fetch</strong>? Em que situação você
+usaria o segundo?</p>
+</blockquote>
+<ol start="3" type="a">
+<li><p>Após integrar as mudanças do repositório principal, e verificar
+que está tudo OK, solicite no site do seu <em>fork</em> no GitHub a
+criação de um <em>pull request</em> (opção <em>New Pull
+Request</em>).</p></li>
+</ol>
+<ol start="10" type="1">
+<li><p>Ao invés de <strong>git add features</strong>, você poderia ter
+trocado o nome <em>features</em> por um ponto, que representa o
+diretório corrente. Em que situações os dois comandos teriam o mesmo
+efeito? Em que situações eles teriam efeito diferentes?</p></li>
+<li><p>É interessante que todos os arquivos do projeto sejam mantidos
+sob controle de versão? Por que? Para que serve o arquivo
+<strong>.gitignore</strong>? Dê um exemplo de uma linha que você acha
+que seria importante adicionar a esse arquivo.</p></li>
+<li><p>Opcionalmente, para identificar quando, e por quem, foi feita
+cada mudança no arquivo <strong>AutoAvaliacao.feature</strong>,
+digite</p></li>
+</ol>
+<blockquote>
+<p><strong>git blame AutoAvaliacao.feature</strong></p>
+<p>Analise a saída gerada e indique o que representam as várias
+informações que aparecem em uma linha qualquer da saída.</p>
+</blockquote>
+<ol start="13" type="1">
+<li><p>Opcionalmente, todos esses comandos do git têm várias opções de
+comportamento que podem ser passadas como parâmetros para que o comando
+funcione de forma diferente. Verifique quais são as opções do
+<strong>git blame</strong> digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git blame -h</strong></p>
+<p>Qual o comportamento obtido com as opções <strong>-L</strong> e
+<strong>--line-porcelain</strong>?</p>
+</blockquote>
+<h2 id="aula-3">Aula 3 </h2>
+<ol start="14" type="1">
+<li><p>Ao invés de ter usado <strong>git merge discrepantes</strong> no
+Item 7<strong>,</strong> para incorporar as modificações de
+<strong>discrepantes</strong> ao <strong>master</strong>, alguns
+projetos exigem antes uma reorganização da história do projeto para que
+a história do repositório principal seja mais limpa e linear. Para
+entender como isso funciona, siga as recomendações abaixo:</p>
+<ol type="a">
+<li><p>Crie dois <em>commits</em> em <strong>discrepantes</strong> e um
+no <strong>master</strong>, e visualize o histórico do seu projeto
+local</p></li>
+<li><p>Antes de integrar os dois <em>branches</em>, mude a base dos
+novos commits adicionados a <strong>discrepantes</strong>
+digitando</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git rebase master</strong></p>
+<p>no <em>branch</em> <strong>discrepantes</strong>. Isso faz com que as
+modificações feitas em <strong>discrepantes</strong> sejam agora
+representadas por <em>commits</em> similares (não os mesmos) em
+<strong>master</strong>. Como você pode constatar que os
+<em>commits</em> são similares?</p>
+</blockquote>
+<ol start="3" type="a">
+<li><p>Finalize o processo indo para <strong>master</strong> e
+digitando</p></li>
+</ol>
+<blockquote>
+<p><strong>git merge discrepantes</strong></p>
+<p>para que os dois branches apontem para o mesmo commit</p>
+</blockquote>
+<ol start="4" type="a">
+<li><p>Visualize o histórico do seu projeto local. O que aconteceu de
+diferente em relação a um simples processo direto de <em>merge</em>,
+como feito no Item 7?</p></li>
+<li><p>Integre as mudanças ao seu <em>fork</em>.</p></li>
+</ol>
+<ol start="15" type="1">
+<li><p>Opcionalmente, faça uma modificação no arquivo
+<strong>AutoAvaliacao.feature</strong> e registre-a, por exemplo, com
+uma mensagem como "novo cenário de visualização de percentual de
+discrepância". Se logo em seguida notamos que é necessário um pequeno
+ajuste nessa modificação, devemos fazer o ajuste e registrá-lo com uma
+mensagem como "pequeno ajuste no novo cenário de visualização de
+percentual de discrepância".</p>
+<ol type="a">
+<li><p>Faça esse ajuste</p></li>
+<li><p>Você acha que muitas sequências de <em>commits</em> desse tipo
+podem comprometer o entendimento do repositório principal e dificultar a
+revisão das contribuições? Por que?</p></li>
+<li><p>Para simplificar a história de desenvolvimento, digite</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><strong>git rebase -i HEAD~2</strong></p>
+<p>No arquivo apresentado, digite o comando <strong>squash</strong> no
+local do <strong>pick</strong> do <em>commit</em> que você quer que seja
+unificado ao outro. Ajuste a mensagem do <em>commit</em> final para
+"novo cenário de visualização de percentual de discrepância". Por
+default, o editor apresentado é o vi. Se for esse o caso, use "esc"
+(sempre usado antes de invocar os comandos do editor) e depois ":wq"
+para gravar as modificações e sair do sistema. Para deletar um caracter,
+digite "x". Para deletar uma linha inteira, use "dd". Para inserir um
+caracter, use "i".</p>
+</blockquote>
+<ol start="4" type="a">
+<li><p>Analise o histórico do seu repositório. O que aconteceu? Qual o
+conteúdo do arquivo no <em>commit</em> final?</p></li>
+<li><p>Integre as mudanças ao seu <em>fork</em>.</p></li>
+<li><p>Se você quisesse unificar 3, ao invés de apenas 2
+<em>commits</em>, o que você mudaria nas ações feitas no Item
+c?</p></li>
+<li><p>Se você tivesse unificado <em>commits</em> que já tivessem sido
+enviados ao repositório principal, o que iria acontecer caso algum
+colega já tivesse baixado esses commits e integrados ao repositório
+dele?</p></li>
+<li><p>Ao invés de criar um novo <em>commit</em> e usar o
+<strong>squash</strong>, como recomendado acima, você poderia ter usado
+o comando <strong>git commit --amend</strong>? Indique o que esse
+comando pode fazer.</p></li>
+</ol>
+<ol start="16" type="1">
+<li><p>Estando no <em>branch</em> <strong>discrepantes</strong>, e tendo
+feito uma mudança no arquivo <strong>AutoAvaliacao.feature</strong>,
+gravado o arquivo, sem ter dado ainda <em>commit</em>, mude para o
+<em>branch</em> <strong>master</strong>. Após essa operação, qual o
+conteúdo do arquivo <strong>AutoAvaliacao.feature</strong> no seu
+diretório de trabalho local? Esse conteúdo corresponde ao que você
+esperava? Por que? O que teria acontecido se, no <em>branch</em>
+<strong>master</strong>, o arquivo
+<strong>AutoAvaliacao.feature</strong> tivesse sido também modificado na
+mesma área em que ele foi modificado quando você estava no
+<em>branch</em> <strong>discrepantes</strong>? Os comandos <strong>git
+stash</strong> poderiam ajudar nessa situação? Que comandos exatamente?
+Como?</p></li>
+<li><p>Opcionalmente, tendo terminado o trabalho no <em>branch</em>
+<strong>discrepantes</strong>, você poderia apagá-lo? Que comando você
+usaria para isso? Qual o efeito desse comando (ele apaga exatamente o
+que? ponteiros? commits?)?</p></li>
+<li><p><mark></mark>Opcionalmente, <mark>use o comando <strong>git
+tag</strong> para marcar o conteúdo de <strong>master</strong> como
+sendo a primeira versão da sua especificação de requisitos. Qual a
+vantagem disso?</mark></p></li>
+<li><p><mark>Supondo que você tenha feito modificações em vários
+arquivos no seu diretório de trabalho local, e tenha chegado a conclusão
+de que quer descartar essas modificações. Como você poderia usar o
+comando <strong>git reset</strong> para fazer isso? Com que parâmetros
+você chamaria esse comando? Qual a diferença entre esse comando e o
+<strong>git checkout</strong>?</mark></p></li>
+<li><p>Opcionalmente, <mark>indique, listando os comandos específicos
+que você digitaria, como o comando <strong>git config</strong> pode ser
+usado para configurar seu usuário git (informações sobre autor e
+e-mail). Que outros tipos de informações podem ser configuradas com o
+comando <strong>git config</strong>?</mark></p></li>
+</ol>
+<blockquote>
+<p><mark></mark></p>
+</blockquote>
+<ol start="21" type="1">
+<li><p>Opcionalmente, <mark>explique a utilidade dos comandos mv, rm,
+grep e bisect.</mark></p></li>
+</ol>
+</body>
+</html>

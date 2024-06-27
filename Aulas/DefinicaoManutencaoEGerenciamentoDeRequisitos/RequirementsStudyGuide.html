@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Requirements</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1
+id="roteiro-de-exercícios-sobre-requisitos-disciplina-engenharia-de-software-e-sistemas">Roteiro
+de exercícios sobre Requisitos, disciplina Engenharia de Software e
+Sistemas</h1>
+<h2 id="paulo-borba">Paulo Borba</h2>
+<h2 id="centro-de-informática">Centro de Informática</h2>
+<h2 id="universidade-federal-de-pernambuco">Universidade Federal de
+Pernambuco</h2>
+<p><strong>Adicione as respostas imediatamente após cada pergunta
+(inclusive nas questões que têm várias perguntas)</strong>, usando uma
+outra cor <strong>bem legível</strong>. Leia com calma e atenção as
+instruções, e reflita com cautela sobre as consequências de cada
+comando.</p>
+<h2 id="aula-1">Aula 1</h2>
+<ol type="1">
+<li><p>Quem você considera que seriam os <em>stakeholders</em> de um
+sistema de gerenciamento de metas (como Elicitar e especificar
+requisitos com qualidade) e conceitos (como MA, MPA, e MANA) dos alunos
+das disciplinas de graduação do Centro de Informática da Universidade
+Federal de Pernambuco?</p></li>
+<li><p>Suponha que, em uma entrevista com um <em>stakeholder</em> de um
+sistema de controle acadêmico como o SIGA, ele diz que deseja uma
+funcionalidade de cálculo de média de um aluno. Que perguntas você faria
+para entender melhor a necessidade do <em>stakeholder</em> e especificar
+essa funcionalidade? Que perguntas você faria para entender que
+funcionalidades auxiliares seriam necessárias para o funcionamento da
+funcionalidade de cálculo de média?</p></li>
+<li><p>Que <em>storyboards</em> ou esboços de tela você acha que deveria
+desenhar e mostrar aos <em>stakeholders</em> para validar inicialmente
+as necessidades dele com relação à funcionalidade de cálculo de média da
+questão anterior? Basta apresentar a descrição do que seriam os esboços,
+não os esboços em si.</p></li>
+<li><p>Suponha que o <em>stakeholder</em> Mariana estabeleceu maior
+prioridade para a funcionalidade de cálculo de média, e que o
+<em>stakeholder</em> Pedro estabeleceu maior prioridade para a
+funcionalidade de geração de relatório com a listagem dos alunos de uma
+turma (apenas com o nome de cada aluno). Como você, no papel de analista
+de requisitos, deveria proceder para definir que <em>feature</em>
+especificar e implementar primeiro? E como você procederia se Pedro
+tivesse dado mais prioridade à feature de cadastro de notas dos
+alunos?</p></li>
+<li><p>Como usuário do sistema de gerenciamento de metas, que requisitos
+não funcionais você acha que seriam importantes para você? Liste em
+ordem decrescente de prioridade, ou aplique um processo de triagem, se
+achar mais adequado.</p></li>
+<li><p>Além dos requisitos funcionais, e dos requisitos não funcionais
+associados a fatores de qualidade de software, que outros tipos de
+restrições você acha que poderiam ser exigidas pelos
+<em>stakeholders</em> e seriam importantes considerar como requisitos
+não funcionais durante o desenvolvimento de um sistema?</p></li>
+</ol>
+<h2 id="aula-2">Aula 2</h2>
+<ol start="7" type="1">
+<li><p>Veja o <a
+href="https://www.google.com.br/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=16&amp;ved=2ahUKEwjlpvKhz9fgAhUPH7kGHX7mAOMQFjAPegQIABAC&amp;url=https%3A%2F%2Fcsis.pace.edu%2F~marchese%2FCS775%2FRequirements%2520Specification%2520Template.doc&amp;usg=AOvVaw2jGtqP_Gds0CWWl37tABQX"><em><u>template</u></em></a>
+para documento de requisitos de uma instituição americana. Em
+particular, observe o índice e leia a Seção 3. Com base nisso, como você
+compara (em termos de detalhamento, dificuldade de escrita, nível de
+abstração, facilidade para derivação de testes, etc.) especificações de
+requisitos baseadas em documentos que seguem esse template com
+especificações baseadas em cenários?</p></li>
+<li><p>Uma das funcionalidades importantes do sistema de gerenciamento
+de metas (SGM) é a auto-avaliação. Cada aluno deve ser capaz de atribuir
+o conceito (MA, MPA, e MANA) que ele acha que merece em cada uma das
+metas (Entender conceitos de requisitos, Especificar requisitos com
+qualidade, Entender conceitos de gerência de configuração, etc.)
+avaliadas. Durante a entrevista com os interessados, ficou decidido que
+seria interessante visualizar os conceitos atribuídos pelo professor na
+mesma tela de preenchimento da auto-avaliação. Também foi acertado que
+todas as metas têm que ser auto-avaliadas de uma só vez, não havendo
+possibilidade de auto-avaliação parcial. Considerando esses aspectos,
+siga as seguintes recomendações:</p>
+<ol type="a">
+<li><p>Desenhe esboços de páginas do sistema relacionadas à essa
+funcionalidade (cole, logo abaixo, imagens dos esboços)</p></li>
+<li><p>Especifique, no formato ilustrado nos slides, a feature de
+auto-avaliação</p></li>
+<li><p>Especifique, no formato ilustrado nos slides, um cenário de GUI e
+um de serviço relatando o preenchimento bem sucedido da
+auto-avaliação</p></li>
+<li><p>Especifique, no formato ilustrado nos slides, um cenário de GUI e
+um de serviço relatando o preenchimento mal sucedido da auto-avaliação
+devido a ausência de conceitos a serem preenchidos pelo aluno para pelo
+menos uma das metas</p></li>
+<li><p>Verifique se os seus cenários estão seguindo rigorosamente as
+recomendações para escrita de cenários com qualidade (mencionadas nos
+<em>slides</em> e no livro texto). Se for necessário, altere as
+respostas dos itens anteriores.</p></li>
+</ol></li>
+<li><p>Do ponto de vista dos professores que vão usar o sistema, é
+interessante ter uma funcionalidade para visualizar a quantidade, o
+percentual, e a lista de alunos com auto-avaliações discrepantes (com
+viés prejudicial ao aluno) das avaliações feitas pelo professor. Uma
+auto-avaliação é considerada discrepante (com viés prejudicial ao aluno)
+quando o conceito atribuído pelo aluno é superior (MANA &lt; MPA &lt;
+MA) ao conceito atribuído pelo professor em pelo menos 25% das metas
+avaliadas. Considerando esses aspectos, siga as seguintes
+recomendações:</p>
+<ol type="a">
+<li><p>Desenhe esboços de páginas do sistema relacionadas à essa
+funcionalidade (cole, logo abaixo, imagens dos esboços)</p></li>
+<li><p>Ajuste a especificação da feature de auto-avaliação do exercício
+anterior, contemplando agora o novo interessado e objetivo</p></li>
+<li><p>Especifique, no formato ilustrado nos slides, um cenário de GUI
+quando não há nenhuma discrepância (1 aluno tem conceito superior ao do
+professor em 1 de 5 metas, outro só tem conceitos inferiores ao do
+professor, e outro só tem conceitos iguais)</p></li>
+<li><p>Especifique, no formato ilustrado nos slides, um cenário de GUI
+quando há discrepância em 1 de 3 alunos</p></li>
+<li><p>Verifique se os seus cenários estão seguindo rigorosamente as
+recomendações para escrita de cenários com qualidade (mencionadas nos
+<em>slides</em> e no livro texto). Se for necessário, altere as
+respostas dos itens anteriores.</p></li>
+</ol></li>
+<li><p>Envie o nome do seu projeto pelo <em><u>slack</u></em> para que o
+professor possa criar um canal <em><u>slack</u></em> para o seu projeto;
+se cadastre no canal criado. Colar logo abaixo a imagem do canal do
+<em>slack</em>.</p></li>
+</ol>
+<h2 id="aula-3">Aula 3</h2>
+<ol start="11" type="1">
+<li><p>Analise as descrições de <em>features</em> e cenários do <a
+href="https://github.com/spgroup/rgms">repositório</a> do RGMS (veja, no
+diretório <a
+href="https://github.com/spgroup/rgms/tree/master/test/cucumber">test/cucumber</a>,
+os arquivos .feature)</p>
+<ol type="a">
+<li><p>Leia 3 cenários no total, de pelo menos 2 arquivos (cole os
+cenários logo abaixo)</p></li>
+<li><p>Identifique, e liste logo abaixo, quais recomendações para
+escrita de cenários com qualidade (mencionadas nos <em>slides</em> e no
+livro texto) não foram seguidas na escrita desses cenários</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><em>Seguem exemplos de respostas. Substitua esses exemplos pelas suas
+respostas.</em></p>
+<p><em>O cenário A não segue a recomendação X</em></p>
+<p><em>Os cenários A e B não seguem a recomendação Y</em></p>
+<p><em>Os cenários B e C não seguem a recomendação Z</em></p>
+<p><em>O passo 2 do cenário C deveria ser um When</em></p>
+</blockquote>
+<ol start="12" type="1">
+<li><p>Solicite, a um colega de turma, dois cenários escritos por ele
+como resposta dos exercícios 8 e 9.</p>
+<ol type="a">
+<li><p>Cole os cenários logo abaixo.</p></li>
+<li><p>Identifique, e liste logo abaixo, quais recomendações para
+escrita de cenários com qualidade (mencionadas nos <em>slides</em> e no
+livro texto) não foram seguidas nos cenários especificados pelo seu
+colega.</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><em>Seguem exemplos de respostas. Substitua esses exemplos pelas suas
+respostas.</em></p>
+<p><em>O cenário A não segue a recomendação X</em></p>
+<p><em>Os cenários A e B não seguem a recomendação Y</em></p>
+<p><em>O passo 2 do cenário B deveria ser um When</em></p>
+</blockquote>
+<ol start="13" type="1">
+<li><p>Realize as entrevistas com os <em>stakeholders</em> do sistema
+escolhido, e cole logo abaixo as principais perguntas feitas por você, e
+os resumos das respostas dadas pelos <em>stakeholders.</em></p>
+<ol type="a">
+<li><p>Siga as práticas sugeridas nos <em>slides</em> e livro, e o
+<em>checklist</em> associado</p></li>
+</ol></li>
+</ol>
+<h2 id="aula-4">Aula 4</h2>
+<ol start="14" type="1">
+<li><p>Defina e coloque a seguir a lista de cenários a serem cobertos
+(quatro cenários de GUI <strong>relevantes</strong>, não triviais) por
+você, como parte do projeto da disciplina.</p>
+<ol type="a">
+<li><p>Inicialmente, nessa questão, só é preciso o nome de cada cenário
+e a ideia geral associada</p></li>
+<li><p>É recomendado que cada aluno foque em cenários de uma única
+<em>feature</em>, relacionados a uma mesma funcionalidade, assumindo que
+essa <em>feature</em> envolva cenários relevantes que precisem ser
+especificados e testados. Naturalmente, algumas <em>features</em> vão
+precisar de mais cenários que outras. Assim, se for o caso, foque em
+mais de uma <em>feature</em>.</p></li>
+<li><p>Cada aluno, individualmente, pede <em>feedback</em> ao professor
+sobre os seus cenários (a melhor forma de fazer isso é colocar os
+cenários em um Google docs, <strong>liberado para comentários</strong>,
+e enviar o <em>link</em> pelo slack)</p></li>
+<li><p>Se já existir uma versão funcional do sistema escolhido pela sua
+equipe, os cenários novos devem corresponder a novas funcionalidades a
+serem oferecidas pelo sistema, não a funcionalidades já implementadas e
+funcionando na versão atual do sistema</p></li>
+</ol></li>
+<li><p>Desenhe e cole abaixo <em>sketches</em> dos cenários</p>
+<ol type="a">
+<li><p>Cada aluno, individualmente, pede <em>feedback</em> ao professor
+sobre os <em>sketches</em> dos seus cenários</p></li>
+</ol></li>
+<li><p>Opcionalmente, e só se fizer sentido para o sistema escolhido
+para o seu projeto, indique (como na Questão 14) dois cenários de
+serviço <strong>relevantes</strong>, não triviais.</p></li>
+</ol>
+<h2 id="aula-5">Aula 5</h2>
+<ol start="17" type="1">
+<li><p>Elaborar e colocar abaixo as especificações dos cenários</p>
+<ol type="a">
+<li><p>Cada aluno, individualmente, pede <em>feedback</em> aos monitores
+e professor sobre os seus cenários</p>
+<ol type="i">
+<li><p><mark>especificações de cenários com erros básicos não serão
+analisados</mark></p></li>
+<li><p><mark>cada especificação de cenário só será analisada uma vez,
+assim capriche na primeira versão</mark></p></li>
+</ol></li>
+<li><p>Seguir rigorosamente as práticas sugeridas nos <em>slides</em> e
+livro, e o <em>checklist</em> associado</p></li>
+</ol></li>
+<li><p>Solicite, a um colega de equipe, os cenários escritos por ele
+como resposta do exercício anterior.</p>
+<ol type="a">
+<li><p>Cole os cenários logo abaixo.</p></li>
+<li><p>Identifique, e liste logo abaixo, quais recomendações para
+escrita de cenários com qualidade (mencionadas nos <em>slides</em> e no
+livro texto) não foram seguidas nos cenários especificados pelo seu
+colega.</p></li>
+</ol></li>
+</ol>
+<blockquote>
+<p><em>Seguem exemplos de respostas. Substitua esses exemplos pelas suas
+respostas.</em></p>
+<p><em>O cenário A não segue a recomendação X</em></p>
+<p><em>Os cenários A e B não seguem a recomendação Y</em></p>
+<p><em>O passo 2 do cenário B deveria ser um When</em></p>
+</blockquote>
+</body>
+</html>
