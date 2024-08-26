@@ -153,6 +153,7 @@ Adicione as respostas imediatamente após as perguntas, usando uma outra cor. Le
     4. Visualize o histórico do seu projeto local. O que aconteceu de diferente em relação a um simples processo direto de *merge*, como feito no Item 7?  
     5. Integre as mudanças ao seu *fork*.  
 15.  Opcionalmente, faça uma modificação no arquivo **AutoAvaliacao.feature** e registre-a, por exemplo, com uma mensagem como "novo cenário de visualização de percentual de discrepância". Se logo em seguida notamos que é necessário um pequeno ajuste nessa modificação, devemos fazer o ajuste e registrá-lo com uma mensagem como "pequeno ajuste no novo cenário de visualização de percentual de discrepância".   
+
     1. Faça esse ajuste
 
     2. Você acha que muitas sequências de *commits* desse tipo podem comprometer o entendimento do repositório principal e dificultar a revisão das contribuições? Por que?
