@@ -34,19 +34,26 @@ Observação: O template também pode ser acessado na pasta atual deste reposit�
    e. Verifique se os seus cenários estão seguindo rigorosamente as recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto). Se for necessário, altere as respostas dos itens anteriores.
 
 9. Do ponto de vista dos professores que vão usar o sistema, é interessante ter uma funcionalidade para visualizar a quantidade, o percentual, e a lista de alunos com auto-avaliações discrepantes (com viés prejudicial ao aluno) das avaliações feitas pelo professor. Uma auto-avaliação é considerada discrepante (com viés prejudicial ao aluno) quando o conceito atribuído pelo aluno é superior (MANA \< MPA \< MA) ao conceito atribuído pelo professor em pelo menos 25% das metas avaliadas. Considerando esses aspectos, siga as seguintes recomendações:     
+
    a. Desenhe esboços de páginas do sistema relacionadas à essa funcionalidade (cole, logo abaixo, imagens dos esboços)  
+
    b. Ajuste a especificação da feature de auto-avaliação do exercício anterior, contemplando agora o novo interessado e objetivo  
+
    c. Especifique, no formato ilustrado nos slides, um cenário de GUI quando não há nenhuma discrepância (1 aluno tem conceito superior ao do professor em 1 de 5 metas, outro só tem conceitos inferiores ao do professor, e outro só tem conceitos iguais)  
+
    d. Especifique, no formato ilustrado nos slides, um cenário de GUI quando há discrepância em 1 de 3 alunos  
+
    e. Verifique se os seus cenários estão seguindo rigorosamente as recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto). Se for necessário, altere as respostas dos itens anteriores.  
-10. Envie o nome do seu projeto pelo *slack* para que o professor possa criar um canal *slack* para o seu projeto; se cadastre no canal criado. Colar logo abaixo a imagem do canal do *slack*. 
+11. Envie o nome do seu projeto pelo *slack* para que o professor possa criar um canal *slack* para o seu projeto; se cadastre no canal criado. Colar logo abaixo a imagem do canal do *slack*. 
 
     
 
 ## Aula 3
 
 11. Analise as descrições de *features* e cenários do [repositório](https://github.com/spgroup/rgms) do RGMS (veja, no diretório [test/cucumber](https://github.com/spgroup/rgms/tree/master/test/cucumber), os arquivos .feature)  
+
     a. Leia 3 cenários no total, de pelo menos 2 arquivos (cole os cenários logo abaixo)  
+
     b. Identifique, e liste logo abaixo, quais recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto) não foram seguidas na escrita desses cenários   
        *Seguem exemplos de respostas. Substitua esses exemplos pelas suas respostas.*  
        *O cenário A não segue a recomendação X*  
@@ -54,37 +61,49 @@ Observação: O template também pode ser acessado na pasta atual deste reposit�
        *Os cenários B e C não seguem a recomendação Z*  
        *O passo 2 do cenário C deveria ser um When*   
          
-12. Solicite, a um colega de turma, dois cenários escritos por ele como resposta dos exercícios 8 e 9\.   
+13. Solicite, a um colega de turma, dois cenários escritos por ele como resposta dos exercícios 8 e 9\.   
+
     a. Cole os cenários logo abaixo.   
+
     b. Identifique, e liste logo abaixo, quais recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto) não foram seguidas nos cenários especificados pelo seu colega.   
        *Seguem exemplos de respostas. Substitua esses exemplos pelas suas respostas.*  
        *O cenário A não segue a recomendação X*  
        *Os cenários A e B não seguem a recomendação Y*   
        *O passo 2 do cenário B deveria ser um When*   
-13. Realize as entrevistas com os *stakeholders* do sistema escolhido, e cole logo abaixo as principais perguntas feitas por você, e os resumos das respostas dadas pelos *stakeholders.*  
+15. Realize as entrevistas com os *stakeholders* do sistema escolhido, e cole logo abaixo as principais perguntas feitas por você, e os resumos das respostas dadas pelos *stakeholders.*  
+
     a. Siga as práticas sugeridas nos *slides* e livro, e o *checklist* associado  
        
 
 ## Aula 4
 
 14. Defina e coloque a seguir a lista de cenários a serem cobertos (quatro cenários de GUI **relevantes**, não triviais) por você, como parte do projeto da disciplina.  
+
     a. Inicialmente, nessa questão, só é preciso o nome de cada cenário e a ideia geral associada  
+
     b. É recomendado que cada aluno foque em cenários de uma única *feature*, relacionados a uma mesma funcionalidade, assumindo que essa *feature* envolva cenários relevantes que precisem ser especificados e testados. Naturalmente, algumas *features* vão precisar de mais cenários que outras. Assim, se for o caso, foque em mais de uma *feature*.  
+
     c. Cada aluno, individualmente, pede *feedback* ao professor sobre os seus cenários (a melhor forma de fazer isso é colocar os cenários em um Google docs, **liberado para comentários**, e enviar o *link* pelo slack)   
+
     d. Se já existir uma versão funcional do sistema escolhido pela sua equipe, os cenários novos devem corresponder a novas funcionalidades a serem oferecidas pelo sistema, não a funcionalidades já implementadas e funcionando na versão atual do sistema  
-15. Desenhe e cole abaixo *sketches* dos cenários  
+16. Desenhe e cole abaixo *sketches* dos cenários  
+
     a. Cada aluno, individualmente, pede *feedback* ao professor sobre os *sketches* dos seus cenários  
-16. Opcionalmente, e só se fizer sentido para o sistema escolhido para o seu projeto, indique (como na Questão 14\) dois cenários de serviço **relevantes**, não triviais.
+18. Opcionalmente, e só se fizer sentido para o sistema escolhido para o seu projeto, indique (como na Questão 14\) dois cenários de serviço **relevantes**, não triviais.
 
 ## Aula 5
 
 17. Elaborar e colocar abaixo as especificações dos cenários  
+
     a. Cada aluno, individualmente, pede *feedback* aos monitores e professor sobre os seus cenários  
-       i. especificações de cenários com erros básicos não serão analisados  
-       ii. cada especificação de cenário só será analisada uma vez, assim capriche na primeira versão  
+       1. especificações de cenários com erros básicos não serão analisados  
+       2. cada especificação de cenário só será analisada uma vez, assim capriche na primeira versão  
+
     b. Seguir rigorosamente as práticas sugeridas nos *slides* e livro, e o *checklist* associado  
-18. Solicite, a um colega de equipe, os cenários escritos por ele como resposta do exercício anterior.   
+19. Solicite, a um colega de equipe, os cenários escritos por ele como resposta do exercício anterior.   
+
     a. Cole os cenários logo abaixo.   
+
     b. Identifique, e liste logo abaixo, quais recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto) não foram seguidas nos cenários especificados pelo seu colega.   
        *Seguem exemplos de respostas. Substitua esses exemplos pelas suas respostas.*  
        *O cenário A não segue a recomendação X*  
