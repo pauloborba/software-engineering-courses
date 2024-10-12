@@ -25,34 +25,46 @@ Adicione as respostas imediatamente após as perguntas, usando uma outra cor. Le
 10. Assumindo que uma equipe de desenvolvimento de software realizou 30, 34, 36 e 35 pontos em quatro iterações consecutivas, indique qual a *velocity* da equipe, assumindo que a equipe contou com mais um desenvolvedor a partir da segunda iteração.  
 11. Assumindo que a velocidade atual da sua equipe de desenvolvimento é de 30 pontos, qual passará a ser a velocidade da mesma com a chegada de um novo desenvolvedor?  
 12. Considere que as seguintes tarefas estão no *backlog* do seu projeto: **T1** desenvolver cenários de cadastro de alunos (1 ponto, baixa prioridade), **T2** desenvolver cenários de cadastro de notas de alunos (1 ponto, baixa prioridade), **T3** desenvolver cenários de importação de arquivo Excel com notas de alunos (3 pontos, alta prioridade), **T4** desenvolver cenários de importação de arquivo Excel com dados dos alunos (3 pontos, baixa prioridade), **T5** desenvolver cenários de cálculo de média de alunos (2 pontos, alta prioridade), **T6** desenvolver cenários de notificação de notas e média de alunos (3 pontos, média prioridade), **T7** desenvolver cenários de auto-avaliação (3 pontos, média prioridade), **T8** refatorar a *feature* de controle de acesso (1 ponto, baixa prioridade).   
-    1. Supondo que a velocidade atual da equipe é de 7 pontos, que tarefas você escolheria para realizar na próxima iteração (*n*)? Por que?  
-    2. Considerando a mesma suposição, que tarefas você escolheria para realizar na iteração seguinte (*n+1*)? Por que?  
-    3. Supondo que o especialista na API de leitura de arquivos Excel não tivesse disponibilidade para trabalhar na iteração *n*, mas apenas na *n+1*, que tarefas você escolheria para realizar na iteração *n*? Por que? E que tarefas você escolheria para realizar na iteração *n+1*? Por que?  
-    4. Supondo que as tarefas **T1** e **T2** têm que ser realizadas ao mesmo tempo por dois desenvolvedores, qual a interface que o arquiteto deveria definir para que a implementação das funcionalidades pudesse ser feita de forma independente, sem excesso de comunicação entre os desenvolvedores?   
-    5. Supondo que você acabou de realizar a tarefa **T1**, que a tarefa **T2** está sendo desenvolvida por um outro desenvolvedor, e que as tarefas **T3** e **T7** estão programadas para a iteração atual, qual das duas você escolheria como a sua próxima tarefa a ser realizada? Por que?  
-    6. Supondo que não houvesse na equipe de desenvolvimento especialistas na API de notificação a ser utilizada pela tarefa **T6**, e que o uso da mesma pudesse afetar significativamente a definição da arquitetura do sistema, você deveria antecipar ou postergar a realização dessa tarefa?    
-    7. Que pontuação e prioridade você daria para uma tarefa de  desenvolvimento da *feature* de cadastro de professores? Por que? E uma tarefa de desenvolvimento da *feature* de cálculo da média de alunos reprovados em um conjunto de turmas? Por que?
+
+    a. Supondo que a velocidade atual da equipe é de 7 pontos, que tarefas você escolheria para realizar na próxima iteração (*n*)? Por que?  
+
+    b. Considerando a mesma suposição, que tarefas você escolheria para realizar na iteração seguinte (*n+1*)? Por que?  
+
+    c. Supondo que o especialista na API de leitura de arquivos Excel não tivesse disponibilidade para trabalhar na iteração *n*, mas apenas na *n+1*, que tarefas você escolheria para realizar na iteração *n*? Por que? E que tarefas você escolheria para realizar na iteração *n+1*? Por que?  
+
+    d. Supondo que as tarefas **T1** e **T2** têm que ser realizadas ao mesmo tempo por dois desenvolvedores, qual a interface que o arquiteto deveria definir para que a implementação das funcionalidades pudesse ser feita de forma independente, sem excesso de comunicação entre os desenvolvedores?   
+
+    e. Supondo que você acabou de realizar a tarefa **T1**, que a tarefa **T2** está sendo desenvolvida por um outro desenvolvedor, e que as tarefas **T3** e **T7** estão programadas para a iteração atual, qual das duas você escolheria como a sua próxima tarefa a ser realizada? Por que?  
+
+    f. Supondo que não houvesse na equipe de desenvolvimento especialistas na API de notificação a ser utilizada pela tarefa **T6**, e que o uso da mesma pudesse afetar significativamente a definição da arquitetura do sistema, você deveria antecipar ou postergar a realização dessa tarefa?    
+
+    g. Que pontuação e prioridade você daria para uma tarefa de  desenvolvimento da *feature* de cadastro de professores? Por que? E uma tarefa de desenvolvimento da *feature* de cálculo da média de alunos reprovados em um conjunto de turmas? Por que?
 
 ## Aula 3
 
 13. Cadastrar as atividades do projeto como *issues* do GitHub, e gerenciar o projeto   
-    1. No caso de projeto que não foi criado pelo professor  
+
+    a. No caso de projeto que não foi criado pelo professor  
        1. criar, no GitHub, para a equipe, o repositório do projeto (inicialmente só com um arquivo README) e enviar o *link* para o canal do projeto no Slack  
        2. cada membro da equipe cria o seu *fork*, caso a equipe tenha decido por essa organização  
        3. verificar se o professor deu *fork* no seu projeto    
        4. nas entregas futuras do projeto da disciplina, enviar PR para o *fork* que será criado pelo professor, não para o seu repositório   
-    2. No caso de projeto que foi criado pelo professor  
+    
+    b. No caso de projeto que foi criado pelo professor  
        1. criar, no GitHub, para a equipe, um *fork* do repositório do projeto   
        2. nas entregas futuras do projeto da disciplina, enviar PR para o repositório original do professor   
-    3. Cada aluno cadastra as suas tarefas **no repositório GitHub da equipe** (todos têm que ter permissão de escrita)  
+    
+    c. Cada aluno cadastra as suas tarefas **no repositório GitHub da equipe** (todos têm que ter permissão de escrita)  
        1. uma para cada cenário, para juntamente detalhar e especificar o cenário, implementar os testes associados, e implementar a funcionalidade associada na aplicação  
        2. pelo menos uma tarefa de refatoração  
        3. coloque a seguir os *links* para as tarefas criadas  
-    4. A equipe, em conjunto, prioriza as tarefas e define duas iterações curtas (as tarefas da primeira iteração ficam em *In Progress*, as da segunda ficam em *To do*)  
+    
+    d. A equipe, em conjunto, prioriza as tarefas e define duas iterações curtas (as tarefas da primeira iteração ficam em *In Progress*, as da segunda ficam em *To do*)  
        1. cada iteração com pelo menos duas tarefas por aluno  
        2. o objetivo de cada iteração é gerar uma versão funcional do produto, que possa prontamente ser usada pelo cliente, mesmo que não tenha tantas funcionalidades; o importante é que as funcionalidades presentes estejam funcionando bem  
        3. coloque a seguir uma imagem dos paíneis GitHub do seu projeto, ressaltando as suas tarefas   
-    5. A equipe, em conjunto, realiza as reuniões de acompanhamento (*daily scrum meeting*)   
+    
+    e. A equipe, em conjunto, realiza as reuniões de acompanhamento (*daily scrum meeting*)   
        1. no *slack*, ou  
        2. presencialmente (e cada um envia o seu resumo para o *slack*)  
        3. pelo menos nos dias de aula de acompanhamento, mas idealmente todo dia em que trabalhar no projeto
