@@ -96,11 +96,15 @@ Para o uso do chrome, você teria que colocar algo como a seguir, mas não recom
 21. Qual o efeito de **expect(err).toEqual(null)** nos blocos *catch* dos testes do arquivo [ta-server.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-594cceae3b8a3b25e4dc455337c8627b)?   
 22. Com a versão atual do servidor, o teste "só cadastra alunos" passará ou falhará? Por que?  
 23. Implemente dois testes de serviço relacionados aos cenários de remoção de alunos.  
+
     a. Cole os testes logo abaixo.   
+
     b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
     c. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
-24. **(Opcional)** Implemente dois testes de serviço relacionados aos cenários do cadastro de auto-avaliação.  
+25. **(Opcional)** Implemente dois testes de serviço relacionados aos cenários do cadastro de auto-avaliação.  
+
     a. Cole os testes logo abaixo.   
+
     b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).
 
     Execute os testes e cole logo abaixo a imagem do relatório da execução.
