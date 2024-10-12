@@ -63,21 +63,31 @@ Para o uso do chrome, você teria que colocar algo como a seguir, mas não recom
 13. Analise o *commit* "implementacao do cenario de cadastro de aluno com CPF duplicado". Qual o propósito da modificação do arquivo HTML? Caso um desenvolvedor fosse responsável por criar o arquivo HTML, e outro fosse responsável por implementar o teste, qual seria a interface entre as duas tarefas? Por que, no **Given** adicionado, são invocados tanto comandos de criação de um aluno quanto de verificação se há um determinado aluno cadastrado?   
 14. Qual a principal melhoria no código de teste feita no *commit* "extracao de criarAluno nos testes de aceitacao"? Qual a principal melhoria no código de teste feita no *commit* "refatoracao dos testes de aceitacao"?  
 15.  Implemente um teste de aceitação de GUI para a funcionalidade de remoção de alunos do roteiro anterior.   
-    1. Cole o teste logo abaixo.   
-    2. Verifique se o seu teste está seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-    3. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
-16. **(Opcional)** Implemente um teste de aceitação de serviço para a funcionalidade de remoção de alunos do roteiro anterior.   
-    1. Cole o teste logo abaixo.   
-    2. Verifique se o seu teste está seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-    3. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
-17. **(Opcional)** Implemente os testes correspondentes aos cenários de GUI para o cadastro de auto-avaliação especificados por você no roteiro de requisitos.  
-    1. Cole os testes logo abaixo.   
-    2. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-    3. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
-18. **(Opcional)** Implemente os testes correspondentes aos cenários de GUI para a visualização de discrepâncias de auto-avaliação especificados por você no roteiro de requisitos.  
-    1. Cole os testes logo abaixo.   
-    2. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-    3. Execute os testes e cole logo abaixo a imagem do relatório da execução.
+
+    a. Cole o teste logo abaixo.   
+    
+    b. Verifique se o seu teste está seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+    
+    c. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
+17. **(Opcional)** Implemente um teste de aceitação de serviço para a funcionalidade de remoção de alunos do roteiro anterior.   
+
+    a. Cole o teste logo abaixo.   
+
+    b. Verifique se o seu teste está seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+
+    c. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
+19. **(Opcional)** Implemente os testes correspondentes aos cenários de GUI para o cadastro de auto-avaliação especificados por você no roteiro de requisitos.  
+
+    a. Cole os testes logo abaixo.   
+
+    b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+    c. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
+21. **(Opcional)** Implemente os testes correspondentes aos cenários de GUI para a visualização de discrepâncias de auto-avaliação especificados por você no roteiro de requisitos.  
+
+    a. Cole os testes logo abaixo.   
+
+    b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+    c. Execute os testes e cole logo abaixo a imagem do relatório da execução.
 
 ## Aula 3
 
@@ -86,12 +96,12 @@ Para o uso do chrome, você teria que colocar algo como a seguir, mas não recom
 21. Qual o efeito de **expect(err).toEqual(null)** nos blocos *catch* dos testes do arquivo [ta-server.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-594cceae3b8a3b25e4dc455337c8627b)?   
 22. Com a versão atual do servidor, o teste "só cadastra alunos" passará ou falhará? Por que?  
 23. Implemente dois testes de serviço relacionados aos cenários de remoção de alunos.  
-    1. Cole os testes logo abaixo.   
-    2. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-    3. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
+    a. Cole os testes logo abaixo.   
+    b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+    c. Execute os testes e cole logo abaixo a imagem do relatório da execução.  
 24. **(Opcional)** Implemente dois testes de serviço relacionados aos cenários do cadastro de auto-avaliação.  
-    1. Cole os testes logo abaixo.   
-    2. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).
+    a. Cole os testes logo abaixo.   
+    b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).
 
     Execute os testes e cole logo abaixo a imagem do relatório da execução.
 
@@ -104,11 +114,15 @@ Para o uso do chrome, você teria que colocar algo como a seguir, mas não recom
 29. Qual a principal vantagem da modificação do *commit* "refatoracao dos testes, cadastro de alunos"?  
 30. Qual a principal vantagem da refatoração do *commit* "refinamento do teste de CPF duplicado, e refatoracao"? A modificação feita no último caso de teste, altera o seu comportamento? O teste resultante é melhor ou pior do que o anterior?  
 31. Implemente dois testes de classe indiretamente relacionados aos cenários de remoção de alunos.  
-    1. Cole os testes logo abaixo.   
-    2. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
-32. Qual a principal diferença entre os testes "não aceita alunos com CPF duplicado" (no arquivo [cadastrodealunos.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-eeffe3b15e644bf1dfd4c5eb1b78e7fa) do *commit* do teste de classe) e "não cadastra alunos com CPF duplicado" (no arquivo [ta-server.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-594cceae3b8a3b25e4dc455337c8627b) do *commit* de teste de serviço)? Isso caracteriza bem a diferença entre testes de classes e testes de serviço? Por que? Por que você acha que o desenvolvedor optou por escrever os dois tipos de teste?  
-33. **(Opcional)** Solicite, a um colega de turma, três testes (um de aceitação, um de serviço, e um de classe) implementados por ele como resposta dos exercícios anteriores.   
-    1. Cole os testes logo abaixo.   
-    2. Identifique, e liste logo abaixo, quais recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto) não foram seguidas nos testes especificados pelo seu colega.   
-34. Implementar parte dos testes do seu projeto: aceitação (um para cada cenário), de classe (pelo menos um, mas busque a quantidade suficiente para testar os aspectos mais relevantes da funcionalidade associada), e de serviço (pelo menos um, mas busque a quantidade suficiente para testar os aspectos mais relevantes da funcionalidade associada)  
+
+    a. Cole os testes logo abaixo.   
+
+    b. Verifique se os seus testes estão seguindo rigorosamente as recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto).  
+33. Qual a principal diferença entre os testes "não aceita alunos com CPF duplicado" (no arquivo [cadastrodealunos.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-eeffe3b15e644bf1dfd4c5eb1b78e7fa) do *commit* do teste de classe) e "não cadastra alunos com CPF duplicado" (no arquivo [ta-server.spec.ts](https://github.com/pauloborba/teachingassistant/commits/2019-2\#diff-594cceae3b8a3b25e4dc455337c8627b) do *commit* de teste de serviço)? Isso caracteriza bem a diferença entre testes de classes e testes de serviço? Por que? Por que você acha que o desenvolvedor optou por escrever os dois tipos de teste?  
+34. **(Opcional)** Solicite, a um colega de turma, três testes (um de aceitação, um de serviço, e um de classe) implementados por ele como resposta dos exercícios anteriores.   
+
+    a. Cole os testes logo abaixo.   
+
+    b. Identifique, e liste logo abaixo, quais recomendações para escrita de testes com qualidade (mencionadas nos *slides* e no livro texto) não foram seguidas nos testes especificados pelo seu colega.   
+35. Implementar parte dos testes do seu projeto: aceitação (um para cada cenário), de classe (pelo menos um, mas busque a quantidade suficiente para testar os aspectos mais relevantes da funcionalidade associada), e de serviço (pelo menos um, mas busque a quantidade suficiente para testar os aspectos mais relevantes da funcionalidade associada)  
     
