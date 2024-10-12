@@ -88,25 +88,27 @@ Adicione as respostas imediatamente após as perguntas, usando uma outra cor. Le
    
    g. Revisar o pull request enviado e verificar que nenhum arquivo ou mudança foi inadvertidamente incluído:
 
-   i. Só devem ser incluídos arquivos e mudanças relacionadas à sua funcionalidade, e que foram alterados durante a realização da sua atividade.
-   
-   ii. Pull requests não devem conter arquivos gerados ou de configuração particular de cada máquina ou IDE, como o conteúdo do diretório `node_modules`, arquivos `.js` gerados a partir de `.ts`, etc. O mesmo vale para arquivos de log e similares. Não deve-se dar commits nesses arquivos. Use o `.gitignore` para evitar esse problema.
-   
-   iii. Evite pular linhas, adicionar espaços, etc., em partes do código que você não precisa modificar; cada mudança desse tipo precisa ser analisada por quem vai integrar a sua contribuição ao repositório principal.
-   
-   iv. Execute um spell-checker ou verificador gramatical para ter certeza de que os cenários criados não contêm erros de inglês.
-   
-   v. Tenha certeza de que todos os testes estejam passando na versão incluída no pull request, e que ele possa ser integrado sem conflitos.
-   
-   vi. A mensagem do pull request deve refletir com precisão o seu conteúdo.
+      i. Só devem ser incluídos arquivos e mudanças relacionadas à sua funcionalidade, e que foram alterados durante a realização da sua atividade.
+      
+      ii. Pull requests não devem conter arquivos gerados ou de configuração particular de cada máquina ou IDE, como o conteúdo do diretório `node_modules`, arquivos `.js` gerados a partir de `.ts`, etc. O mesmo vale para arquivos de log e similares. Não deve-se dar commits nesses arquivos. Use o `.gitignore` para evitar esse problema.
+      
+      iii. Evite pular linhas, adicionar espaços, etc., em partes do código que você não precisa modificar; cada mudança desse tipo precisa ser analisada por quem vai integrar a sua contribuição ao repositório principal.
+      
+      iv. Execute um spell-checker ou verificador gramatical para ter certeza de que os cenários criados não contêm erros de inglês.
+      
+      v. Tenha certeza de que todos os testes estejam passando na versão incluída no pull request, e que ele possa ser integrado sem conflitos.
+      
+      vi. A mensagem do pull request deve refletir com precisão o seu conteúdo.
  
 17. Revisar o PR de um outro membro da sua equipe  
    
    a. Por ordem alfabética, o primeiro membro da equipe revisa a entrega do segundo membro, o segundo membro revisa a entrega do terceiro, e assim por diante (se um dos membros não entregou a sua parte do projeto, revise a entrega do membro seguinte)  
    
    b. Adicionar comentários no próprio github  
-         1. nas linhas dos arquivos que aparecem nos *commits* do *pull request*, não na área de discussão do *pull request*  
-         2. abrir a aba *files changed* do *pull request*, ir para o arquivo a ser revisado, passar o mouse sobre a linha que você gostaria de comentar, um símbolo de \+ irá aparecer, ao clicar nele você pode comentar o que há de errado com a linha  
+         
+         i. nas linhas dos arquivos que aparecem nos *commits* do *pull request*, não na área de discussão do *pull request*  
+         
+         ii. abrir a aba *files changed* do *pull request*, ir para o arquivo a ser revisado, passar o mouse sobre a linha que você gostaria de comentar, um símbolo de \+ irá aparecer, ao clicar nele você pode comentar o que há de errado com a linha  
 
    c. Usar os slides das aulas como checklists da revisão (o revisor tem que verificar se todos os problemas e recomendações dos slides foram observados durante a realização do projeto)  
 18. Colar abaixo o *link* para o PR atualizado no repositório do professor com novos *commits* contendo  
