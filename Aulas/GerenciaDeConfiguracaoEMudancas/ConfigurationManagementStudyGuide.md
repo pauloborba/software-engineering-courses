@@ -21,7 +21,8 @@ Adicione as respostas imediatamente após as perguntas, usando uma outra cor. Le
 
       **git clone \<URL\_DO\_SEU\_FORK\>**
 
-   2. Observe uma mensagem como a abaixo ![][image1]  
+   2. Observe uma mensagem como a abaixo ![image](https://github.com/user-attachments/assets/07837adb-fed4-4112-b8ce-376f6d695957)
+
    3. Liste e inspecione o conteúdo do diretório, comparando com o conteúdo do projeto original. Temos agora o mesmo conteúdo tanto no repositório principal quanto no *fork* do GitHub e no *clone* da sua máquina?  
    4. Analise a documentação do git ([livro](https://github.com/progit/progit2/releases/download/2.1.161/progit.pdf), [manual de referência](https://git-scm.com/docs)) e descubra o propósito do comando **git init**. Qual a diferença dele em relação ao **git clone**? Em que situações você usaria o **git init?**  
 3. Agora podemos efetivamente contribuir com o projeto, começando pelos requisitos.   
