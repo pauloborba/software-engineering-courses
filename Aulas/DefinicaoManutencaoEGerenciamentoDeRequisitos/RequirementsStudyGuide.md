@@ -21,12 +21,18 @@
 
 7. Veja o [*template*](https://www.google.com.br/url?sa=t\&rct=j\&q=\&esrc=s\&source=web\&cd=16\&ved=2ahUKEwjlpvKhz9fgAhUPH7kGHX7mAOMQFjAPegQIABAC\&url=https%3A%2F%2Fcsis.pace.edu%2F\~marchese%2FCS775%2FRequirements%2520Specification%2520Template.doc\&usg=AOvVaw2jGtqP\_Gds0CWWl37tABQX) para documento de requisitos de uma instituição americana. Em particular, observe o índice e leia a Seção 3\. Com base nisso, como você compara (em termos de detalhamento, dificuldade de escrita, nível de abstração, facilidade para derivação de testes, etc.) especificações de requisitos baseadas em documentos que seguem esse template com especificações baseadas em cenários?  
 Observação: O template também pode ser acessado na pasta atual deste repositório, em: RequirementsSpecificationTemplate.md
-8. Uma das funcionalidades importantes do sistema de gerenciamento de metas (SGM) é a auto-avaliação. Cada aluno deve ser capaz de atribuir o conceito (MA, MPA, e MANA) que ele acha que merece em cada uma das metas (Entender conceitos de requisitos, Especificar requisitos com qualidade, Entender conceitos de gerência de configuração, etc.) avaliadas. Durante a entrevista com os interessados, ficou decidido que seria interessante visualizar os conceitos atribuídos pelo professor na mesma tela de preenchimento da auto-avaliação. Também foi acertado que todas as metas têm que ser auto-avaliadas de uma só vez, não havendo possibilidade de auto-avaliação parcial. Considerando esses aspectos, siga as seguintes recomendações:   
-      a. Desenhe esboços de páginas do sistema relacionadas à essa funcionalidade (cole, logo abaixo, imagens dos esboços)  
-      b. Especifique, no formato ilustrado nos slides, a feature de auto-avaliação  
-      c. Especifique, no formato ilustrado nos slides, um cenário de GUI e um de serviço relatando o preenchimento bem sucedido da auto-avaliação  
-      d. Especifique, no formato ilustrado nos slides, um cenário de GUI e um de serviço relatando o preenchimento mal sucedido da auto-avaliação devido a ausência de conceitos a serem preenchidos pelo aluno para pelo menos uma das metas  
-      e. Verifique se os seus cenários estão seguindo rigorosamente as recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto). Se for necessário, altere as respostas dos itens anteriores.  
+8. Uma das funcionalidades importantes do sistema de gerenciamento de metas (SGM) é a auto-avaliação. Cada aluno deve ser capaz de atribuir o conceito (MA, MPA, e MANA) que ele acha que merece em cada uma das metas (Entender conceitos de requisitos, Especificar requisitos com qualidade, Entender conceitos de gerência de configuração, etc.) avaliadas. Durante a entrevista com os interessados, ficou decidido que seria interessante visualizar os conceitos atribuídos pelo professor na mesma tela de preenchimento da auto-avaliação. Também foi acertado que todas as metas têm que ser auto-avaliadas de uma só vez, não havendo possibilidade de auto-avaliação parcial. Considerando esses aspectos, siga as seguintes recomendações:
+
+   a. Desenhe esboços de páginas do sistema relacionadas à essa funcionalidade (cole, logo abaixo, imagens dos esboços)
+   
+   b. Especifique, no formato ilustrado nos slides, a feature de auto-avaliação
+   
+   c. Especifique, no formato ilustrado nos slides, um cenário de GUI e um de serviço relatando o preenchimento bem-sucedido da auto-avaliação
+   
+   d. Especifique, no formato ilustrado nos slides, um cenário de GUI e um de serviço relatando o preenchimento mal sucedido da auto-avaliação devido à ausência de conceitos a serem preenchidos pelo aluno para pelo menos uma das metas
+   
+   e. Verifique se os seus cenários estão seguindo rigorosamente as recomendações para escrita de cenários com qualidade (mencionadas nos *slides* e no livro texto). Se for necessário, altere as respostas dos itens anteriores.
+
 9. Do ponto de vista dos professores que vão usar o sistema, é interessante ter uma funcionalidade para visualizar a quantidade, o percentual, e a lista de alunos com auto-avaliações discrepantes (com viés prejudicial ao aluno) das avaliações feitas pelo professor. Uma auto-avaliação é considerada discrepante (com viés prejudicial ao aluno) quando o conceito atribuído pelo aluno é superior (MANA \< MPA \< MA) ao conceito atribuído pelo professor em pelo menos 25% das metas avaliadas. Considerando esses aspectos, siga as seguintes recomendações:     
    a. Desenhe esboços de páginas do sistema relacionadas à essa funcionalidade (cole, logo abaixo, imagens dos esboços)  
    b. Ajuste a especificação da feature de auto-avaliação do exercício anterior, contemplando agora o novo interessado e objetivo  
