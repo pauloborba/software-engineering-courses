@@ -25,7 +25,7 @@ Normalmente o guia é apenas iniciado na aula, mas os alunos só conseguem final
 
 1. Introdução
 2. Requisitos 
-   1. Aula [1](https://www.youtube.com/playlist?list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1G)
+   1. Aula [1](https://youtube.com/playlist?list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1G&si=74gkaoBDIlQetDIx)
    2. Aula [2](https://www.youtube.com/watch?v=3KA2wBp6hs4&list=PLE-5PZOOoVUhaLFPgbbzW8n6IdpilEPur) 
    3. Aula [3](https://www.youtube.com/watch?v=Ke6oXvOX7B8&list=PLE-5PZOOoVUjE9_nRIARQZYTOSu8Zuhco)  
    4. Aula [4](https://www.youtube.com/watch?v=vZyDEjjd_-U&list=PLE-5PZOOoVUiZdAW_tU6aYNwgE71QL3vW)
