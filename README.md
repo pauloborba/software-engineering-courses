@@ -1,7 +1,8 @@
 # Disciplinas de Engenharia de Software do CIn/UFPE
 
-A seguir temos os links para os vídeos de cada disciplina. 
+Neste repositório temos o material das disciplinas de Engenharia de Software que já ministrei na graduação e na pós-graduação da UFPE. 
 
+A seguir temos os links para os vídeos de cada disciplina. 
 Os vídeos têm durações variadas, normalmente um pouco mais ou um pouco menos de 10 minutos. 
 
 Cada vídeo foca em explorar um conceito ou uma técnica específica, como "priorização de requisitos", "recomendações para commits", "controle de custos em um projeto de desenvolvimento", "projeto de testes fortalecendo pós-condições", "princípio de substituição de Liskov", e "preservação de comportamento". 
@@ -14,7 +15,7 @@ Além dos vídeos, disponibilizamos aqui, na pasta Aulas, os slides apresentados
 Nessa pasta, temos subpastas para cada macro tópico coberto nas disciplinas.
 Os arquivos de slides com o termo "Plus" no nome são da disciplina da pós-graduação; os outros são da disciplina da graduação.
 
-Os guias de estudo funcionam como um roteiro de atividades (exercícios, reflexões, pesquisas, leituras, etc.) a serem realizadas após assistir os vídeos de cada aula.
+Os guias de estudo funcionam como um roteiro de atividades (exercícios, reflexões, pesquisas, leituras, etc.) a serem realizadas após assistir aos vídeos de cada aula.
 Normalmente, as aulas da graduação são de duas horas.
 A primeira hora corresponde ao conteúdo dos vídeos (apresentação expositiva ou, em um contexto de sala de aula invertida, discussão sobre os vídeos e esclarecimento de dúvidas sobre o conteúdo dos mesmos).
 A segunda hora é dedicada ao guia de estudo; os alunos individualmente trabalham no guia, com acompanhamento do professor.
@@ -54,4 +55,12 @@ Normalmente o guia é apenas iniciado na aula, mas os alunos só conseguem final
 
 
 ## Engenharia de Software/Tópicos avançados em Engenharia de Software (pós-graduação/eletiva da graduação)
+
+1. [Requirements](https://www.youtube.com/watch?v=0zYgtcUgXtM&list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1Ghttps://www.youtube.com/watch?v=0zYgtcUgXtM&list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1G)
+2. [Design and Implementation](https://www.youtube.com/watch?v=yGO5wxtV0Vs&list=PLE-5PZOOoVUhMxgzBxkAPaij4KF77kftq)
+3. [Testing](https://www.youtube.com/watch?v=nOQnAkC0Yt4&list=PLE-5PZOOoVUiEVKU4PrgpESddSlrhYZ7x)
+4. [Evolution and Refactoring](https://www.youtube.com/watch?v=Mn-YkY7BYA8&list=PLE-5PZOOoVUhFoRtBfsOkhT5-x5DzrLRV)
+5. [Project Management](https://www.youtube.com/watch?v=A4zb6PTAfBQ&list=PLE-5PZOOoVUiOoeFsj9_VasLn7xsMBxGN)
+6. [Code Review](https://www.youtube.com/watch?v=AxW6z7_Gs2g&list=PLE-5PZOOoVUg42Tl11F3J02o5n5ZnCTNJ)
+7. [Static Analysis](https://www.youtube.com/watch?v=VqNjTqUm-BE&list=PLE-5PZOOoVUjao8BeNye0nUZ7zfJRL2mq)
 
