@@ -1,15 +1,19 @@
 # Disciplinas de Engenharia de Software do CIn/UFPE
 
 A seguir temos os links para os vídeos de cada disciplina. 
+
 Os vídeos têm durações variadas, normalmente um pouco mais ou um pouco menos de 10 minutos. 
+
 Cada vídeo foca em explorar um conceito ou uma técnica específica, como "priorização de requisitos", "recomendações para commits", "controle de custos em um projeto de desenvolvimento", "projeto de testes fortalecendo pós-condições", "princípio de substituição de Liskov", e "preservação de comportamento". 
 Dessa forma, a pessoa interessada pode mais facilmente reforçar o seu conhecimento sobre um desses conceitos ou técnicas, ao invés de procurar isso no meio de um vídeo mais longo sobre um tópico mais geral como Requisitos ou Refatoração.
+
 Os vídeos estão agrupados em playlists, cada uma com os vídeos do que eu normalmente cubro em uma aula de uma hora de duração expositiva.
 Mais abaixo seguem os links para as playlists, agrupados em seções que refletem os tópicos principais abordados em cada disciplina. 
 
 Além dos vídeos, disponibilizamos aqui, na pasta Aulas, os slides apresentados nos vídeos (arquivos com sufixo "Slides"), e os guias de estudo (arquivos com sufixo "StudyGuide") para cada aula. 
 Nessa pasta, temos subpastas para cada macro tópico coberto nas disciplinas.
 Os arquivos de slides com o termo "Plus" no nome são da disciplina da pós-graduação; os outros são da disciplina da graduação.
+
 Os guias de estudo funcionam como um roteiro de atividades (exercícios, reflexões, pesquisas, leituras, etc.) a serem realizadas após assistir os vídeos de cada aula.
 Normalmente, as aulas da graduação são de duas horas.
 A primeira hora corresponde ao conteúdo dos vídeos (apresentação expositiva ou, em um contexto de sala de aula invertida, discussão sobre os vídeos e esclarecimento de dúvidas sobre o conteúdo dos mesmos).
