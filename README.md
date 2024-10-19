@@ -56,7 +56,7 @@ Normalmente o guia é apenas iniciado na aula, mas os alunos só conseguem final
 
 ## Engenharia de Software/Tópicos avançados em Engenharia de Software (pós-graduação/eletiva da graduação)
 
-1. [Requirements](https://www.youtube.com/watch?v=0zYgtcUgXtM&list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1Ghttps://www.youtube.com/watch?v=0zYgtcUgXtM&list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1G)
+1. [Requirements](https://www.youtube.com/watch?v=0zYgtcUgXtM&list=PLE-5PZOOoVUgQmHHn-bXzr5AyDWkl3n1G)
 2. [Design and Implementation](https://www.youtube.com/watch?v=yGO5wxtV0Vs&list=PLE-5PZOOoVUhMxgzBxkAPaij4KF77kftq)
 3. [Testing](https://www.youtube.com/watch?v=nOQnAkC0Yt4&list=PLE-5PZOOoVUiEVKU4PrgpESddSlrhYZ7x)
 4. [Evolution and Refactoring](https://www.youtube.com/watch?v=Mn-YkY7BYA8&list=PLE-5PZOOoVUhFoRtBfsOkhT5-x5DzrLRV)
